@@ -1,0 +1,2832 @@
+{
+  "date": "2026-11-19",
+  "timezone": "Asia/Shanghai",
+  "verification_scope": "解压到新目录（路径含中文和空格）后，重新生成本机格式并编译，再检验清单、题目/答案源码、两份PDF与144dpi逐页渲染。",
+  "old_workspace_dependency_check": "两份编译.fls记录均未引用原工程目录或tmp/tex_setup。",
+  "environment": "Linux，清除了继承的任务TeX路径变量后运行包内build.py；未改系统路径或源文件。",
+  "report_paths_note": "报告中的解压路径替换为${EXTRACTED_PROJECT}；其余检查值保留。",
+  "verification_report": {
+    "format": 1,
+    "tool": "verify.py",
+    "started_at_utc": "2026-11-19T13:12:57+00:00",
+    "project_root": "${EXTRACTED_PROJECT}",
+    "checks": [
+      {
+        "name": "manifest_schema",
+        "passed": true,
+        "details": "需要 format=1 且 files 为非空数组"
+      },
+      {
+        "name": "file:AGENTS.md",
+        "passed": true,
+        "details": {
+          "size_expected": 1894,
+          "size_actual": 1894,
+          "sha256_expected": "01ef34f044d88e3511959d7cde4d40ef1b4dde51b0060a7d3f6805fa578d9af5",
+          "sha256_actual": "01ef34f044d88e3511959d7cde4d40ef1b4dde51b0060a7d3f6805fa578d9af5"
+        }
+      },
+      {
+        "name": "file:README_先读我.txt",
+        "passed": true,
+        "details": {
+          "size_expected": 4532,
+          "size_actual": 4532,
+          "sha256_expected": "0a3a206f2a5a3fd94038350c3aa7e65bb8edd609b1e43734495b46767b3baec2",
+          "sha256_actual": "0a3a206f2a5a3fd94038350c3aa7e65bb8edd609b1e43734495b46767b3baec2"
+        }
+      },
+      {
+        "name": "file:build.cmd",
+        "passed": true,
+        "details": {
+          "size_expected": 133,
+          "size_actual": 133,
+          "sha256_expected": "1347a9676cdddf17d7aa7586202b1943e09bd07eb175914480bcc0fc0cf1d938",
+          "sha256_actual": "1347a9676cdddf17d7aa7586202b1943e09bd07eb175914480bcc0fc0cf1d938"
+        }
+      },
+      {
+        "name": "file:build.py",
+        "passed": true,
+        "details": {
+          "size_expected": 8135,
+          "size_actual": 8135,
+          "sha256_expected": "d56081914eabbf175764527a4a28dae0d9a5b0fbe0f4f6fa058eefa044d133ca",
+          "sha256_actual": "d56081914eabbf175764527a4a28dae0d9a5b0fbe0f4f6fa058eefa044d133ca"
+        }
+      },
+      {
+        "name": "file:build.sh",
+        "passed": true,
+        "details": {
+          "size_expected": 117,
+          "size_actual": 117,
+          "sha256_expected": "62a386e1f14dd40c612c8d9d26c8a9aed5e08440825dcc9d36e8699dda7798ea",
+          "sha256_actual": "62a386e1f14dd40c612c8d9d26c8a9aed5e08440825dcc9d36e8699dda7798ea"
+        }
+      },
+      {
+        "name": "file:docs/依赖版本与许可证.json",
+        "passed": true,
+        "details": {
+          "size_expected": 4993,
+          "size_actual": 4993,
+          "sha256_expected": "3958a72174b944e14ee0c2f064d8437cf682804db65fdb026cc28ca0a8400cd0",
+          "sha256_actual": "3958a72174b944e14ee0c2f064d8437cf682804db65fdb026cc28ca0a8400cd0"
+        }
+      },
+      {
+        "name": "file:docs/内容校正与答案索引.txt",
+        "passed": true,
+        "details": {
+          "size_expected": 4158,
+          "size_actual": 4158,
+          "sha256_expected": "87c7f4c941a2a01d3f54f093dcc144e5acbdc407fd66203f693a3395b50438c9",
+          "sha256_actual": "87c7f4c941a2a01d3f54f093dcc144e5acbdc407fd66203f693a3395b50438c9"
+        }
+      },
+      {
+        "name": "file:docs/恢复来源对照.json",
+        "passed": true,
+        "details": {
+          "size_expected": 981,
+          "size_actual": 981,
+          "sha256_expected": "ac104d584bbc665f4d6b6dd250bbfdb5b1b9ccb73819e67a67e12b0ff210474a",
+          "sha256_actual": "ac104d584bbc665f4d6b6dd250bbfdb5b1b9ccb73819e67a67e12b0ff210474a"
+        }
+      },
+      {
+        "name": "file:docs/接续状态.json",
+        "passed": true,
+        "details": {
+          "size_expected": 3287,
+          "size_actual": 3287,
+          "sha256_expected": "45dc10f4357aa02902612d87303ac3c8e3b9e80abbc419c14d9b9a31887f105d",
+          "sha256_actual": "45dc10f4357aa02902612d87303ac3c8e3b9e80abbc419c14d9b9a31887f105d"
+        }
+      },
+      {
+        "name": "file:docs/文件来源.json",
+        "passed": true,
+        "details": {
+          "size_expected": 2737,
+          "size_actual": 2737,
+          "sha256_expected": "6e5264cc3fd885eeff85c28114436b08701e200e16caf908e3f9a9d78172b130",
+          "sha256_actual": "6e5264cc3fd885eeff85c28114436b08701e200e16caf908e3f9a9d78172b130"
+        }
+      },
+      {
+        "name": "file:docs/独立重编译对照.json",
+        "passed": true,
+        "details": {
+          "size_expected": 695,
+          "size_actual": 695,
+          "sha256_expected": "3703ed0089453a31a27516f14a12a327393ee71027ea2ae0b194dffdc10b7a6a",
+          "sha256_actual": "3703ed0089453a31a27516f14a12a327393ee71027ea2ae0b194dffdc10b7a6a"
+        }
+      },
+      {
+        "name": "file:originals/image-1793757861778.jpg",
+        "passed": true,
+        "details": {
+          "size_expected": 303165,
+          "size_actual": 303165,
+          "sha256_expected": "ed7cd95f7c74e188a8e5e3ee1875fc13b7d57fca1212f4d81a813feea6d6e687",
+          "sha256_actual": "ed7cd95f7c74e188a8e5e3ee1875fc13b7d57fca1212f4d81a813feea6d6e687"
+        }
+      },
+      {
+        "name": "file:originals/image-1793757866957.jpg",
+        "passed": true,
+        "details": {
+          "size_expected": 259937,
+          "size_actual": 259937,
+          "sha256_expected": "abc52f1b5b8fb13959f3d2a0fe81aba3d7b889fce57b22cbc2333568b270f873",
+          "sha256_actual": "abc52f1b5b8fb13959f3d2a0fe81aba3d7b889fce57b22cbc2333568b270f873"
+        }
+      },
+      {
+        "name": "file:outputs/四年级数学阶段测试_LaTeX答案版.pdf",
+        "passed": true,
+        "details": {
+          "size_expected": 224008,
+          "size_actual": 224008,
+          "sha256_expected": "932faaa3db2eb94103bb824a2d6e922a6f548d0d631dfda039ff59070c029a6a",
+          "sha256_actual": "932faaa3db2eb94103bb824a2d6e922a6f548d0d631dfda039ff59070c029a6a"
+        }
+      },
+      {
+        "name": "file:outputs/四年级数学阶段测试_LaTeX试卷版.pdf",
+        "passed": true,
+        "details": {
+          "size_expected": 203640,
+          "size_actual": 203640,
+          "sha256_expected": "5f65bd6923b21632cc4f1df74f1331f68394170ce128bdae31ee57bae75e7c84",
+          "sha256_actual": "5f65bd6923b21632cc4f1df74f1331f68394170ce128bdae31ee57bae75e7c84"
+        }
+      },
+      {
+        "name": "file:package_project.py",
+        "passed": true,
+        "details": {
+          "size_expected": 2594,
+          "size_actual": 2594,
+          "sha256_expected": "90e1761979725fac827ebb200ed898690d87595c5dc0dc99cfbfcbb0f80211af",
+          "sha256_actual": "90e1761979725fac827ebb200ed898690d87595c5dc0dc99cfbfcbb0f80211af"
+        }
+      },
+      {
+        "name": "file:reference/上次交付使用说明.txt",
+        "passed": true,
+        "details": {
+          "size_expected": 1678,
+          "size_actual": 1678,
+          "sha256_expected": "bd72a5f172592cb86177a0d4d8ec9a0aa30c5cf4ced3de0060dca1e1b8d43101",
+          "sha256_actual": "bd72a5f172592cb86177a0d4d8ec9a0aa30c5cf4ced3de0060dca1e1b8d43101"
+        }
+      },
+      {
+        "name": "file:reference/四年级数学阶段测试_早期七页详解.pdf",
+        "passed": true,
+        "details": {
+          "size_expected": 157177,
+          "size_actual": 157177,
+          "sha256_expected": "378f1a349fbad34344c5a2d6aa28728bf13effdbd2f25aa4386d0e782b8ab3a0",
+          "sha256_actual": "378f1a349fbad34344c5a2d6aa28728bf13effdbd2f25aa4386d0e782b8ab3a0"
+        }
+      },
+      {
+        "name": "file:requirements.txt",
+        "passed": true,
+        "details": {
+          "size_expected": 159,
+          "size_actual": 159,
+          "sha256_expected": "2179cf1e2d81121618a44cf2068dcc13182f6f9577c2d3e59aa47ca1930aab67",
+          "sha256_actual": "2179cf1e2d81121618a44cf2068dcc13182f6f9577c2d3e59aa47ca1930aab67"
+        }
+      },
+      {
+        "name": "file:src/exam_template.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 19840,
+          "size_actual": 19840,
+          "sha256_expected": "e3dcaf50dbcd83ed5f2494c693f93a72fe2c5ad26c3d5ac635fbd93b5b35c9b4",
+          "sha256_actual": "e3dcaf50dbcd83ed5f2494c693f93a72fe2c5ad26c3d5ac635fbd93b5b35c9b4"
+        }
+      },
+      {
+        "name": "file:src/四年级数学阶段测试_LaTeX答案版.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 19837,
+          "size_actual": 19837,
+          "sha256_expected": "67a442a56517cbc7abf0f6430d60b91ddc0df8dd16619e6f7cc54098fc2e94f1",
+          "sha256_actual": "67a442a56517cbc7abf0f6430d60b91ddc0df8dd16619e6f7cc54098fc2e94f1"
+        }
+      },
+      {
+        "name": "file:src/四年级数学阶段测试_LaTeX试卷版.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 19838,
+          "size_actual": 19838,
+          "sha256_expected": "d7b4e459bae0a60514c14cdb21673456d277f4d0c09047be361fe74019e6c896",
+          "sha256_actual": "d7b4e459bae0a60514c14cdb21673456d277f4d0c09047be361fe74019e6c896"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/fonts/fandol/COPYING",
+        "passed": true,
+        "details": {
+          "size_expected": 35737,
+          "size_actual": 35737,
+          "sha256_expected": "853b586f0d520493390e571431afaf36a5fbb27dcfd239338a7ee9b0505cb004",
+          "sha256_actual": "853b586f0d520493390e571431afaf36a5fbb27dcfd239338a7ee9b0505cb004"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/fonts/fandol/README",
+        "passed": true,
+        "details": {
+          "size_expected": 645,
+          "size_actual": 645,
+          "sha256_expected": "32537e063f4c7d4aebf016d5c8279cbce13f34fc8970f24b2578a3c04d0f8ca6",
+          "sha256_actual": "32537e063f4c7d4aebf016d5c8279cbce13f34fc8970f24b2578a3c04d0f8ca6"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/fonts/lm/GUST-FONT-LICENSE.TXT",
+        "passed": true,
+        "details": {
+          "size_expected": 1377,
+          "size_actual": 1377,
+          "sha256_expected": "49ea6cb9257bbee0a3979c48a774cd221550ac1c20c95549efe45fc99cc18050",
+          "sha256_actual": "49ea6cb9257bbee0a3979c48a774cd221550ac1c20c95549efe45fc99cc18050"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/fonts/lm/MANIFEST-Latin-Modern.TXT",
+        "passed": true,
+        "details": {
+          "size_expected": 52635,
+          "size_actual": 52635,
+          "sha256_expected": "402c79f4ede8548a6fe6f82f42f0288cb0243ba2403dfdeeaadf55d189a46fae",
+          "sha256_actual": "402c79f4ede8548a6fe6f82f42f0288cb0243ba2403dfdeeaadf55d189a46fae"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/fonts/lm/README-Latin-Modern.TXT",
+        "passed": true,
+        "details": {
+          "size_expected": 33548,
+          "size_actual": 33548,
+          "sha256_expected": "7cac4a4a78985ccb1ed429bb2eddf32eeb2e413c94493c7b268385bb7b525250",
+          "sha256_actual": "7cac4a4a78985ccb1ed429bb2eddf32eeb2e413c94493c7b268385bb7b525250"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/fonts/lm/lm-hist.txt",
+        "passed": true,
+        "details": {
+          "size_expected": 19376,
+          "size_actual": 19376,
+          "sha256_expected": "b2bdeacbbc2d681ebdda7b66ebe690d6c5e175ead0255825c9a8dd81c1c375b2",
+          "sha256_actual": "b2bdeacbbc2d681ebdda7b66ebe690d6c5e175ead0255825c9a8dd81c1c375b2"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/latex/ctex/README.md",
+        "passed": true,
+        "details": {
+          "size_expected": 6039,
+          "size_actual": 6039,
+          "sha256_expected": "6a95c163a8f8af1a2037fc95a142dca0f3d06d30c07c78da9c94e82d4463385c",
+          "sha256_actual": "6a95c163a8f8af1a2037fc95a142dca0f3d06d30c07c78da9c94e82d4463385c"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/latex/ctex/ctex.pdf",
+        "passed": true,
+        "details": {
+          "size_expected": 1182778,
+          "size_actual": 1182778,
+          "sha256_expected": "372421fadf1a7cc053f129e89ab53800c80643865498e4b0b297fc180e21e5d7",
+          "sha256_actual": "372421fadf1a7cc053f129e89ab53800c80643865498e4b0b297fc180e21e5d7"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/latex/zhnumber/README.md",
+        "passed": true,
+        "details": {
+          "size_expected": 2309,
+          "size_actual": 2309,
+          "sha256_expected": "6c7369e6a5cf7fd06529aa58591c15b9b68fa3e8c02e41899e64d746b8efb9be",
+          "sha256_actual": "6c7369e6a5cf7fd06529aa58591c15b9b68fa3e8c02e41899e64d746b8efb9be"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/latex/zhnumber/zhnumber.pdf",
+        "passed": true,
+        "details": {
+          "size_expected": 299593,
+          "size_actual": 299593,
+          "sha256_expected": "fbe0c7dbc7c6a1e6e58b8de1fdf68b1a0c2327d9470654ee670aef5771280809",
+          "sha256_actual": "fbe0c7dbc7c6a1e6e58b8de1fdf68b1a0c2327d9470654ee670aef5771280809"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/xelatex/xecjk/README.md",
+        "passed": true,
+        "details": {
+          "size_expected": 3395,
+          "size_actual": 3395,
+          "sha256_expected": "26b1966a93d61171edda86c71e878f50cb254f99e426426b5199d4735c41260f",
+          "sha256_actual": "26b1966a93d61171edda86c71e878f50cb254f99e426426b5199d4735c41260f"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/xelatex/xecjk/example/xeCJK-example-CJKecglue.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 736,
+          "size_actual": 736,
+          "sha256_expected": "30c7dbe9551069d34655f0945793ab5f0cd1c93d152fb11a6e5eb9ffd29a3f40",
+          "sha256_actual": "30c7dbe9551069d34655f0945793ab5f0cd1c93d152fb11a6e5eb9ffd29a3f40"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/xelatex/xecjk/example/xeCJK-example-CJKfntef.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 3760,
+          "size_actual": 3760,
+          "sha256_expected": "df938fe1f57577a956f93955c512c9c6239348f72267a781f8771e52ca60add1",
+          "sha256_actual": "df938fe1f57577a956f93955c512c9c6239348f72267a781f8771e52ca60add1"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/xelatex/xecjk/example/xeCJK-example-CM.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 685,
+          "size_actual": 685,
+          "sha256_expected": "83140a94951849618a6afb180eca6ef2d12ab172c37d6afe0baba19a239f0a56",
+          "sha256_actual": "83140a94951849618a6afb180eca6ef2d12ab172c37d6afe0baba19a239f0a56"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/xelatex/xecjk/example/xeCJK-example-autofake.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 3059,
+          "size_actual": 3059,
+          "sha256_expected": "56f4872b5a9aeda74da6dfb334c2237ada6b01318f8ffc45e0cd0d91b28b6656",
+          "sha256_actual": "56f4872b5a9aeda74da6dfb334c2237ada6b01318f8ffc45e0cd0d91b28b6656"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/xelatex/xecjk/example/xeCJK-example-checksingle.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 944,
+          "size_actual": 944,
+          "sha256_expected": "662f618d182f9d52db7e3fe23c40dce65d2f9d01a097b303d4a673399430464f",
+          "sha256_actual": "662f618d182f9d52db7e3fe23c40dce65d2f9d01a097b303d4a673399430464f"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/xelatex/xecjk/example/xeCJK-example-fallback.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 1740,
+          "size_actual": 1740,
+          "sha256_expected": "ed01cd4d936c279f8d966331bb9420337ba89cf5dbf14554168f069afc398606",
+          "sha256_actual": "ed01cd4d936c279f8d966331bb9420337ba89cf5dbf14554168f069afc398606"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/xelatex/xecjk/example/xeCJK-example-listings.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 2393,
+          "size_actual": 2393,
+          "sha256_expected": "84a16eafc9fa8a0437e362578eacc96d95ca82fad3d25c5e6bf51b87a360682f",
+          "sha256_actual": "84a16eafc9fa8a0437e362578eacc96d95ca82fad3d25c5e6bf51b87a360682f"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/xelatex/xecjk/example/xeCJK-example-mathblock.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 1055,
+          "size_actual": 1055,
+          "sha256_expected": "904e9cc3749ee9fcd6cc8d1d113b58e927cdfff1d1819e26715e8c6a640a3b85",
+          "sha256_actual": "904e9cc3749ee9fcd6cc8d1d113b58e927cdfff1d1819e26715e8c6a640a3b85"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/xelatex/xecjk/example/xeCJK-example-punctstyle.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 4350,
+          "size_actual": 4350,
+          "sha256_expected": "7f98c4e56fc8ca9e0d0c18904d0479e68b63882a2326720add81add41da5412a",
+          "sha256_actual": "7f98c4e56fc8ca9e0d0c18904d0479e68b63882a2326720add81add41da5412a"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/xelatex/xecjk/example/xeCJK-example-subCJKblock.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 5031,
+          "size_actual": 5031,
+          "sha256_expected": "43dd7ed84746753524410ad3297ca71553762af4d291d04c03a8104cfbb33c47",
+          "sha256_actual": "43dd7ed84746753524410ad3297ca71553762af4d291d04c03a8104cfbb33c47"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/xelatex/xecjk/example/xeCJK-example-verbatim.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 2233,
+          "size_actual": 2233,
+          "sha256_expected": "044a40590ec050324d3d9726c9e4ff6bc7d82bda65003e10b661478c01b7a347",
+          "sha256_actual": "044a40590ec050324d3d9726c9e4ff6bc7d82bda65003e10b661478c01b7a347"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/xelatex/xecjk/xeCJK.pdf",
+        "passed": true,
+        "details": {
+          "size_expected": 1340920,
+          "size_actual": 1340920,
+          "sha256_expected": "1fbc093d9fb53b99e17b5ef6ba0b590ff9052609f8ee5f0f8102c9976f0844d8",
+          "sha256_actual": "1fbc093d9fb53b99e17b5ef6ba0b590ff9052609f8ee5f0f8102c9976f0844d8"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/xelatex/xecjk/xunicode-symbols.pdf",
+        "passed": true,
+        "details": {
+          "size_expected": 344025,
+          "size_actual": 344025,
+          "sha256_expected": "dcfe3c04cadc093b0e124233ff3b7ae50f77483cdcbfaaf75c2b4632565b8186",
+          "sha256_actual": "dcfe3c04cadc093b0e124233ff3b7ae50f77483cdcbfaaf75c2b4632565b8186"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/doc/xelatex/xecjk/xunicode-symbols.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 7401,
+          "size_actual": 7401,
+          "sha256_expected": "df0044a18a25ca110a4c656511ed137c753b13960c6ac1d1848283fa26252e2f",
+          "sha256_actual": "df0044a18a25ca110a4c656511ed137c753b13960c6ac1d1848283fa26252e2f"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/misc/xetex/fontmapping/xecjk/full-stop.map",
+        "passed": true,
+        "details": {
+          "size_expected": 182,
+          "size_actual": 182,
+          "sha256_expected": "99c5139c0f4ec4068b97be2fd57931ab2eb91fb8f07386c10b80c8fd4589db9b",
+          "sha256_actual": "99c5139c0f4ec4068b97be2fd57931ab2eb91fb8f07386c10b80c8fd4589db9b"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/misc/xetex/fontmapping/xecjk/full-stop.tec",
+        "passed": true,
+        "details": {
+          "size_expected": 139,
+          "size_actual": 139,
+          "sha256_expected": "43cb62a749ca8cb99fb6334bf20dffffbfb7029f3568c87e9ed9609f9fc4351f",
+          "sha256_actual": "43cb62a749ca8cb99fb6334bf20dffffbfb7029f3568c87e9ed9609f9fc4351f"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/misc/xetex/fontmapping/xecjk/fullwidth-stop.map",
+        "passed": true,
+        "details": {
+          "size_expected": 182,
+          "size_actual": 182,
+          "sha256_expected": "de60f46fa707e81626df5d418a56c8fe34ba60aa1c331a2a72f8a78c810ff03e",
+          "sha256_actual": "de60f46fa707e81626df5d418a56c8fe34ba60aa1c331a2a72f8a78c810ff03e"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/misc/xetex/fontmapping/xecjk/fullwidth-stop.tec",
+        "passed": true,
+        "details": {
+          "size_expected": 143,
+          "size_actual": 143,
+          "sha256_expected": "0a682ac2a98a399cceb01bf7e67c6ddde96e9ffc5240ea4dc87b0af1e9216214",
+          "sha256_actual": "0a682ac2a98a399cceb01bf7e67c6ddde96e9ffc5240ea4dc87b0af1e9216214"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/misc/xetex/fontmapping/xecjk/han-simp.map",
+        "passed": true,
+        "details": {
+          "size_expected": 111791,
+          "size_actual": 111791,
+          "sha256_expected": "8de7ff4dadc187e4ff5556640b7aa468c5d20d74642cdb7167d67acb6d517a2d",
+          "sha256_actual": "8de7ff4dadc187e4ff5556640b7aa468c5d20d74642cdb7167d67acb6d517a2d"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/misc/xetex/fontmapping/xecjk/han-simp.tec",
+        "passed": true,
+        "details": {
+          "size_expected": 70587,
+          "size_actual": 70587,
+          "sha256_expected": "6308f0425d30f8187808a9ea5c2bb75010c71ce91af03735f8c78fc5a61165ea",
+          "sha256_actual": "6308f0425d30f8187808a9ea5c2bb75010c71ce91af03735f8c78fc5a61165ea"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/misc/xetex/fontmapping/xecjk/han-trad.map",
+        "passed": true,
+        "details": {
+          "size_expected": 111609,
+          "size_actual": 111609,
+          "sha256_expected": "e3e9b7852cd22471d97fb000b1fbaedc93483dd201202990b2fa213df5c22a35",
+          "sha256_actual": "e3e9b7852cd22471d97fb000b1fbaedc93483dd201202990b2fa213df5c22a35"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/misc/xetex/fontmapping/xecjk/han-trad.tec",
+        "passed": true,
+        "details": {
+          "size_expected": 70115,
+          "size_actual": 70115,
+          "sha256_expected": "e8198cb455ee1ccfdcfb23c140ec13fabb31fc6ea1571830ed6659c52735c29c",
+          "sha256_actual": "e8198cb455ee1ccfdcfb23c140ec13fabb31fc6ea1571830ed6659c52735c29c"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/fandol/FandolBraille-Display.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 26072,
+          "size_actual": 26072,
+          "sha256_expected": "d767cb666b37e2856dbd14b30d52d62a359868f2032fdc4d7ecebeb03ab635cf",
+          "sha256_actual": "d767cb666b37e2856dbd14b30d52d62a359868f2032fdc4d7ecebeb03ab635cf"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/fandol/FandolBraille-Regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 12484,
+          "size_actual": 12484,
+          "sha256_expected": "4560b7898970fa55fbb5ce676f3688b7ebdede89c9d4f56e02de3aed23905b3c",
+          "sha256_actual": "4560b7898970fa55fbb5ce676f3688b7ebdede89c9d4f56e02de3aed23905b3c"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/fandol/FandolFang-Regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 6961384,
+          "size_actual": 6961384,
+          "sha256_expected": "d838ad32ce2244d8144f408c37fe71065aba6fbbc80759a4d2aa2033948d5bc9",
+          "sha256_actual": "d838ad32ce2244d8144f408c37fe71065aba6fbbc80759a4d2aa2033948d5bc9"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/fandol/FandolHei-Bold.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 3581972,
+          "size_actual": 3581972,
+          "sha256_expected": "42ca2de27b45e16a284768673b6205a5add9e17871ee0e7db9c0d03f061d96fd",
+          "sha256_actual": "42ca2de27b45e16a284768673b6205a5add9e17871ee0e7db9c0d03f061d96fd"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/fandol/FandolHei-Regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 5808908,
+          "size_actual": 5808908,
+          "sha256_expected": "4afa97aa8751e0118617df88272b58d43691b5cffb7ea024c4580496e9f34d28",
+          "sha256_actual": "4afa97aa8751e0118617df88272b58d43691b5cffb7ea024c4580496e9f34d28"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/fandol/FandolKai-Regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 7790552,
+          "size_actual": 7790552,
+          "sha256_expected": "ea7e7fb4f9b3ac694a68d43946e04d21deed6e8c29a7c2d3081e1a4138f2f827",
+          "sha256_actual": "ea7e7fb4f9b3ac694a68d43946e04d21deed6e8c29a7c2d3081e1a4138f2f827"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/fandol/FandolSong-Bold.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 5777588,
+          "size_actual": 5777588,
+          "sha256_expected": "ffa76a70e128947a4dd22151d5ee829b23e24ce3cb6fe8ad49891cd1c2d9e9b9",
+          "sha256_actual": "ffa76a70e128947a4dd22151d5ee829b23e24ce3cb6fe8ad49891cd1c2d9e9b9"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/fandol/FandolSong-Regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 4947904,
+          "size_actual": 4947904,
+          "sha256_expected": "a3820003227d4abe31fe28b493200d94a849ccfd078b50a019264f70353020b0",
+          "sha256_actual": "a3820003227d4abe31fe28b493200d94a849ccfd078b50a019264f70353020b0"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmono10-italic.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 63584,
+          "size_actual": 63584,
+          "sha256_expected": "14e6328a5383d2b927c47051093ce0aff60deea07e6df71b8b99ee8d9c2ff8f2",
+          "sha256_actual": "14e6328a5383d2b927c47051093ce0aff60deea07e6df71b8b99ee8d9c2ff8f2"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmono10-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 64684,
+          "size_actual": 64684,
+          "sha256_expected": "22deb6d3be3ffcb40b33f0e010afb256c677d97c2a2bdee1f5740cdc97751558",
+          "sha256_actual": "22deb6d3be3ffcb40b33f0e010afb256c677d97c2a2bdee1f5740cdc97751558"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmono12-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 63012,
+          "size_actual": 63012,
+          "sha256_expected": "b826e490fa671f254840abe88afea0975b606f57fb4a8b93f53787c26d8ac319",
+          "sha256_actual": "b826e490fa671f254840abe88afea0975b606f57fb4a8b93f53787c26d8ac319"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmono8-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 66268,
+          "size_actual": 66268,
+          "sha256_expected": "17319490d20f24e192bd7e7999484b95111a4654ac2620e7aa215591142ae997",
+          "sha256_actual": "17319490d20f24e192bd7e7999484b95111a4654ac2620e7aa215591142ae997"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmono9-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 63076,
+          "size_actual": 63076,
+          "sha256_expected": "cdd53c7dc01a1d25f21eaf7cae44bfb8a9665e4cbd60e5f8da14287aca819bb9",
+          "sha256_actual": "cdd53c7dc01a1d25f21eaf7cae44bfb8a9665e4cbd60e5f8da14287aca819bb9"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmonocaps10-oblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 71232,
+          "size_actual": 71232,
+          "sha256_expected": "6bb7315ab000361195457b6c5efc75ed4bc24d278c6026d0aa8e0e4847394384",
+          "sha256_actual": "6bb7315ab000361195457b6c5efc75ed4bc24d278c6026d0aa8e0e4847394384"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmonocaps10-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 63228,
+          "size_actual": 63228,
+          "sha256_expected": "9fb93a8f39f8e55682d09edb93c4c07d976c13bb92253b875b5b6a19e9af9e0a",
+          "sha256_actual": "9fb93a8f39f8e55682d09edb93c4c07d976c13bb92253b875b5b6a19e9af9e0a"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 66332,
+          "size_actual": 66332,
+          "sha256_expected": "2f4ae1bd30d4203a1c74c61d61dddbd5e2c2d5a7001d456b1b98e08b7c47ffb9",
+          "sha256_actual": "2f4ae1bd30d4203a1c74c61d61dddbd5e2c2d5a7001d456b1b98e08b7c47ffb9"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmonolt10-boldoblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 75300,
+          "size_actual": 75300,
+          "sha256_expected": "a739b6deaafe0b9e8ae1eec9db1f425c52e1f6f483ca8e07e359bdd118310bba",
+          "sha256_actual": "a739b6deaafe0b9e8ae1eec9db1f425c52e1f6f483ca8e07e359bdd118310bba"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmonolt10-oblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 73144,
+          "size_actual": 73144,
+          "sha256_expected": "f19451a27c178d48b99921e72ff6acf568f670bf58c71c6dd506b1f96a2d9c9e",
+          "sha256_actual": "f19451a27c178d48b99921e72ff6acf568f670bf58c71c6dd506b1f96a2d9c9e"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmonolt10-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 63628,
+          "size_actual": 63628,
+          "sha256_expected": "176f2e3745e3d97eb7b96b25be919ed0e198f491dc363ad28971be1d5707ace7",
+          "sha256_actual": "176f2e3745e3d97eb7b96b25be919ed0e198f491dc363ad28971be1d5707ace7"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmonoltcond10-oblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 75908,
+          "size_actual": 75908,
+          "sha256_expected": "2af9fab2c4d4c7a98aaebb9d66ffe1b55b3319e48c5d84add7ef27c2890747d2",
+          "sha256_actual": "2af9fab2c4d4c7a98aaebb9d66ffe1b55b3319e48c5d84add7ef27c2890747d2"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmonoltcond10-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 64160,
+          "size_actual": 64160,
+          "sha256_expected": "fd2e0afd73a6029887d222f1e379f9e977ed57f9471d48ba44fb42c52a650274",
+          "sha256_actual": "fd2e0afd73a6029887d222f1e379f9e977ed57f9471d48ba44fb42c52a650274"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmonoprop10-oblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 116764,
+          "size_actual": 116764,
+          "sha256_expected": "7306b49832153fb387be1c741962a72d36127a2176f855d11c9903e6a15bfaca",
+          "sha256_actual": "7306b49832153fb387be1c741962a72d36127a2176f855d11c9903e6a15bfaca"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmonoprop10-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 109500,
+          "size_actual": 109500,
+          "sha256_expected": "59036dd0b599f3e90c41dc4b063849bb36ba29058f94d386718fb9ce523d8657",
+          "sha256_actual": "59036dd0b599f3e90c41dc4b063849bb36ba29058f94d386718fb9ce523d8657"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmonoproplt10-bold.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 110276,
+          "size_actual": 110276,
+          "sha256_expected": "c30d83cb4cdd879ea251243590e135e012e5d43e889a0d0990d196b1083715d2",
+          "sha256_actual": "c30d83cb4cdd879ea251243590e135e012e5d43e889a0d0990d196b1083715d2"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmonoproplt10-boldoblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 120732,
+          "size_actual": 120732,
+          "sha256_expected": "4d1193e06d6042695f8caf9cde48785867bee8de8460a7a9c99504074d280f57",
+          "sha256_actual": "4d1193e06d6042695f8caf9cde48785867bee8de8460a7a9c99504074d280f57"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmonoproplt10-oblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 118244,
+          "size_actual": 118244,
+          "sha256_expected": "2d57934e1ae5f71cbcbed7b7ea6fa597f9212ebfd8d0cc91e9fabbb9622cab7f",
+          "sha256_actual": "2d57934e1ae5f71cbcbed7b7ea6fa597f9212ebfd8d0cc91e9fabbb9622cab7f"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmonoproplt10-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 110784,
+          "size_actual": 110784,
+          "sha256_expected": "dedec8ee86f7448949cb695ace72f2e0de3ccc380ff92dfbc6c45c20209e3349",
+          "sha256_actual": "dedec8ee86f7448949cb695ace72f2e0de3ccc380ff92dfbc6c45c20209e3349"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmmonoslant10-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 72212,
+          "size_actual": 72212,
+          "sha256_expected": "4b4a3e600db7f6ec434f8b48b31f22e12faced90e1681c93eeba5e23a6e55fde",
+          "sha256_actual": "4b4a3e600db7f6ec434f8b48b31f22e12faced90e1681c93eeba5e23a6e55fde"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman10-bold.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 111240,
+          "size_actual": 111240,
+          "sha256_expected": "102fe06c430a8b681b2bf6876b7cd967ae4d47b4b6b41d915eb7913b726d9fb1",
+          "sha256_actual": "102fe06c430a8b681b2bf6876b7cd967ae4d47b4b6b41d915eb7913b726d9fb1"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 118204,
+          "size_actual": 118204,
+          "sha256_expected": "c37a28eed7a6e03f792b98b5e5f637b2fcda378bb4855f99284f1a88fe35f124",
+          "sha256_actual": "c37a28eed7a6e03f792b98b5e5f637b2fcda378bb4855f99284f1a88fe35f124"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman10-italic.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 118828,
+          "size_actual": 118828,
+          "sha256_expected": "c1fce25075567bb8dbf2151658c3b442690041db17a2d49fc9e55905ea5b7169",
+          "sha256_actual": "c1fce25075567bb8dbf2151658c3b442690041db17a2d49fc9e55905ea5b7169"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman10-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 111536,
+          "size_actual": 111536,
+          "sha256_expected": "1aa18cfefa58132c52ce5de70db1fd1154201c19cd2b2cdaffba4906a33e6852",
+          "sha256_actual": "1aa18cfefa58132c52ce5de70db1fd1154201c19cd2b2cdaffba4906a33e6852"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman12-bold.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 110496,
+          "size_actual": 110496,
+          "sha256_expected": "28c8782ac2b6486958b5dc7610ada7800c53546ff7f36bc65909a876e1cd338e",
+          "sha256_actual": "28c8782ac2b6486958b5dc7610ada7800c53546ff7f36bc65909a876e1cd338e"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman12-italic.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 117732,
+          "size_actual": 117732,
+          "sha256_expected": "ada6b3f451238784e5a5ea75d43efa1eb4329cd75ce65bf047ed2f31b7b5e2f3",
+          "sha256_actual": "ada6b3f451238784e5a5ea75d43efa1eb4329cd75ce65bf047ed2f31b7b5e2f3"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman12-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 110400,
+          "size_actual": 110400,
+          "sha256_expected": "e6be218ae83e61aa8a29990d3cdc401c678c1962188cb9a4a8b6359e4f5e5870",
+          "sha256_actual": "e6be218ae83e61aa8a29990d3cdc401c678c1962188cb9a4a8b6359e4f5e5870"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman17-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 110248,
+          "size_actual": 110248,
+          "sha256_expected": "ed048c80fb4b67663b80899b89fe5fba17d7442e1286d61fd08fe5689c6b7c3c",
+          "sha256_actual": "ed048c80fb4b67663b80899b89fe5fba17d7442e1286d61fd08fe5689c6b7c3c"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman5-bold.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 109564,
+          "size_actual": 109564,
+          "sha256_expected": "6326fb955d07bedcc8f73684e6b6bfa76706d38f3a85bd89c0659504ace366a1",
+          "sha256_actual": "6326fb955d07bedcc8f73684e6b6bfa76706d38f3a85bd89c0659504ace366a1"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman5-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 111872,
+          "size_actual": 111872,
+          "sha256_expected": "954bd9c376597c7043e7b616430163e0158155edf7434fd70082cf8460c08533",
+          "sha256_actual": "954bd9c376597c7043e7b616430163e0158155edf7434fd70082cf8460c08533"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman6-bold.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 112452,
+          "size_actual": 112452,
+          "sha256_expected": "f1ebd52916182bfc2e3f9d4b5ba847ad6acc6c7761354c0dc052fb01ec14f73c",
+          "sha256_actual": "f1ebd52916182bfc2e3f9d4b5ba847ad6acc6c7761354c0dc052fb01ec14f73c"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman6-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 112212,
+          "size_actual": 112212,
+          "sha256_expected": "501396c437f76c260b8724265b8495f318a640ee5a4674852ecbb20daf256696",
+          "sha256_actual": "501396c437f76c260b8724265b8495f318a640ee5a4674852ecbb20daf256696"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman7-bold.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 110212,
+          "size_actual": 110212,
+          "sha256_expected": "063ea9e378b4fca4fd59771cf522faa21eb7c8516c89464745c79725b384fb9a",
+          "sha256_actual": "063ea9e378b4fca4fd59771cf522faa21eb7c8516c89464745c79725b384fb9a"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman7-italic.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 117960,
+          "size_actual": 117960,
+          "sha256_expected": "19d20f2bb00fbffe5d3d66e9b6a54f0108289068029e9d88649d981d53613ddf",
+          "sha256_actual": "19d20f2bb00fbffe5d3d66e9b6a54f0108289068029e9d88649d981d53613ddf"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman7-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 110792,
+          "size_actual": 110792,
+          "sha256_expected": "48c4b46ab255eec96588fb992fba1ed6102e53d051da480738a61cc6cdb328c3",
+          "sha256_actual": "48c4b46ab255eec96588fb992fba1ed6102e53d051da480738a61cc6cdb328c3"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman8-bold.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 112404,
+          "size_actual": 112404,
+          "sha256_expected": "04d4f633c3da31a169f4c54a7fe8c7e63925b39d030381f8d3eab955f16be7b2",
+          "sha256_actual": "04d4f633c3da31a169f4c54a7fe8c7e63925b39d030381f8d3eab955f16be7b2"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman8-italic.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 117248,
+          "size_actual": 117248,
+          "sha256_expected": "fb0536b5c3eee5b5622cd827ceb410e6514e36512ebdc51d2cf98a96c06d44e8",
+          "sha256_actual": "fb0536b5c3eee5b5622cd827ceb410e6514e36512ebdc51d2cf98a96c06d44e8"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman8-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 111948,
+          "size_actual": 111948,
+          "sha256_expected": "f73015c3827596586faa380c398501caf9b5bcbb6f40b46af6a51277ca97c9fc",
+          "sha256_actual": "f73015c3827596586faa380c398501caf9b5bcbb6f40b46af6a51277ca97c9fc"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman9-bold.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 113040,
+          "size_actual": 113040,
+          "sha256_expected": "f72feac9ea12eb858d8093d6c0ee710a6c25f59b61278c88ec41c0a680838415",
+          "sha256_actual": "f72feac9ea12eb858d8093d6c0ee710a6c25f59b61278c88ec41c0a680838415"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman9-italic.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 118380,
+          "size_actual": 118380,
+          "sha256_expected": "2106cffcdc9f9cb411d7c3441e34d77a168b998a58b40e727ab5b815437d1975",
+          "sha256_actual": "2106cffcdc9f9cb411d7c3441e34d77a168b998a58b40e727ab5b815437d1975"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmroman9-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 112680,
+          "size_actual": 112680,
+          "sha256_expected": "8ab7b017fc67ea0e30cbf9e7ebd940010442ea67b40cf65f87d73f3ca11b0e6f",
+          "sha256_actual": "8ab7b017fc67ea0e30cbf9e7ebd940010442ea67b40cf65f87d73f3ca11b0e6f"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmromancaps10-oblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 116564,
+          "size_actual": 116564,
+          "sha256_expected": "603e6bb88c206f3252d2ca1a061d0faf252dd6c87501f2efa32ce2f70793b1ad",
+          "sha256_actual": "603e6bb88c206f3252d2ca1a061d0faf252dd6c87501f2efa32ce2f70793b1ad"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 108740,
+          "size_actual": 108740,
+          "sha256_expected": "1ab40332a969892c7ed6cb010193b5276ccef1da6798bcbd1a465fee23d29334",
+          "sha256_actual": "1ab40332a969892c7ed6cb010193b5276ccef1da6798bcbd1a465fee23d29334"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmromandemi10-oblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 119632,
+          "size_actual": 119632,
+          "sha256_expected": "430d9237cfeb1b7ef25a36002adac0524a11a07f4a31b16ce5a0eb3330163217",
+          "sha256_actual": "430d9237cfeb1b7ef25a36002adac0524a11a07f4a31b16ce5a0eb3330163217"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmromandemi10-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 111892,
+          "size_actual": 111892,
+          "sha256_expected": "63b6f9528e6117c5b0c0b1992517696ae09d05e7ca3711df0e0409d9db6df32c",
+          "sha256_actual": "63b6f9528e6117c5b0c0b1992517696ae09d05e7ca3711df0e0409d9db6df32c"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmromandunh10-oblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 122840,
+          "size_actual": 122840,
+          "sha256_expected": "5f7b9361353271246ac66a2681399052cc261a943c8a03c754ee212fdfb4a64c",
+          "sha256_actual": "5f7b9361353271246ac66a2681399052cc261a943c8a03c754ee212fdfb4a64c"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmromandunh10-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 113276,
+          "size_actual": 113276,
+          "sha256_expected": "6c298b3680cc111c6e20eb2489bab9637ac316a686740fc1f8396230215e1161",
+          "sha256_actual": "6c298b3680cc111c6e20eb2489bab9637ac316a686740fc1f8396230215e1161"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmromanslant10-bold.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 117984,
+          "size_actual": 117984,
+          "sha256_expected": "5f6689646a5e88b402d2e60085c813fca3a4d60707b0383c65cb023107a8bddc",
+          "sha256_actual": "5f6689646a5e88b402d2e60085c813fca3a4d60707b0383c65cb023107a8bddc"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmromanslant10-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 118508,
+          "size_actual": 118508,
+          "sha256_expected": "056ad4d08d2eb58d6b7fd0ac5de3f1fb799f2bb0c16b66c7e6b5bc5b6aef6481",
+          "sha256_actual": "056ad4d08d2eb58d6b7fd0ac5de3f1fb799f2bb0c16b66c7e6b5bc5b6aef6481"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmromanslant12-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 117116,
+          "size_actual": 117116,
+          "sha256_expected": "25f2ecfb860f2e45e6ebe69d11bc6305f5bfbef8f13476638ba291f47d1f130c",
+          "sha256_actual": "25f2ecfb860f2e45e6ebe69d11bc6305f5bfbef8f13476638ba291f47d1f130c"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmromanslant17-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 118092,
+          "size_actual": 118092,
+          "sha256_expected": "4f30eda1d4674a1f4eea513b3baf85e3ba3fb17b2e4cf09bf627aee91dc0a4cc",
+          "sha256_actual": "4f30eda1d4674a1f4eea513b3baf85e3ba3fb17b2e4cf09bf627aee91dc0a4cc"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmromanslant8-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 118720,
+          "size_actual": 118720,
+          "sha256_expected": "a88ecd1a6b4d5aa1c9d537b98d0de8e19d63b292918fabf0cc36158ed770ca63",
+          "sha256_actual": "a88ecd1a6b4d5aa1c9d537b98d0de8e19d63b292918fabf0cc36158ed770ca63"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmromanslant9-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 119932,
+          "size_actual": 119932,
+          "sha256_expected": "7441aee0c9dfbca16118fc7fe339c2e6c79ecc966a51ac1f76860351b6a8f02e",
+          "sha256_actual": "7441aee0c9dfbca16118fc7fe339c2e6c79ecc966a51ac1f76860351b6a8f02e"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmromanunsl10-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 124048,
+          "size_actual": 124048,
+          "sha256_expected": "21bbbe167e824b93a956327bcc1efda99c1bb472e761834da40cef33cab46194",
+          "sha256_actual": "21bbbe167e824b93a956327bcc1efda99c1bb472e761834da40cef33cab46194"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsans10-bold.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 107448,
+          "size_actual": 107448,
+          "sha256_expected": "a597b710326c1a8a2c7238d808e5d38711638a72a32383478db4829d63afd687",
+          "sha256_actual": "a597b710326c1a8a2c7238d808e5d38711638a72a32383478db4829d63afd687"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsans10-boldoblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 114984,
+          "size_actual": 114984,
+          "sha256_expected": "e45673d84754a94f2f053bd4c15950b4b320144fbb622c630a26fd7b68cfabc5",
+          "sha256_actual": "e45673d84754a94f2f053bd4c15950b4b320144fbb622c630a26fd7b68cfabc5"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 101412,
+          "size_actual": 101412,
+          "sha256_expected": "1b38b36efc21f9d3f34edf6a13f9d71f59c41f824e790f5d3ee5ba5b4936f377",
+          "sha256_actual": "1b38b36efc21f9d3f34edf6a13f9d71f59c41f824e790f5d3ee5ba5b4936f377"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsans10-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 95128,
+          "size_actual": 95128,
+          "sha256_expected": "d431b786b9b603662718e79cfe9b441f47a8b0b3e854dde89d5acb3ed7cfd682",
+          "sha256_actual": "d431b786b9b603662718e79cfe9b441f47a8b0b3e854dde89d5acb3ed7cfd682"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsans12-oblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 102056,
+          "size_actual": 102056,
+          "sha256_expected": "1f138e6203f7092f9a01f6193ed97d971b5045b99969f3a62c7e43a7faabc1c0",
+          "sha256_actual": "1f138e6203f7092f9a01f6193ed97d971b5045b99969f3a62c7e43a7faabc1c0"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsans12-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 95160,
+          "size_actual": 95160,
+          "sha256_expected": "f87ebdea035a96e8787e2c663cfcc78ce73205d37800eafe7948278e2cc7666a",
+          "sha256_actual": "f87ebdea035a96e8787e2c663cfcc78ce73205d37800eafe7948278e2cc7666a"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsans17-oblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 100500,
+          "size_actual": 100500,
+          "sha256_expected": "0f6a4450c5fc9afd3650f24ad9003684fff3252691bbf2a33be94b383db8a77c",
+          "sha256_actual": "0f6a4450c5fc9afd3650f24ad9003684fff3252691bbf2a33be94b383db8a77c"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsans17-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 94828,
+          "size_actual": 94828,
+          "sha256_expected": "f6c395a436e4fa7e88bbf1445e64b9c78ce4effba3668b13cc433077fc71a984",
+          "sha256_actual": "f6c395a436e4fa7e88bbf1445e64b9c78ce4effba3668b13cc433077fc71a984"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsans8-oblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 100084,
+          "size_actual": 100084,
+          "sha256_expected": "7f4227513bfd47b7077bedd125caa4c0a223a2cdad17a1470145cdea83353c88",
+          "sha256_actual": "7f4227513bfd47b7077bedd125caa4c0a223a2cdad17a1470145cdea83353c88"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsans8-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 94256,
+          "size_actual": 94256,
+          "sha256_expected": "04f0d25ca474494cb707e752170f6c22cdcb8ae2b5fb80872143e18d5cc463f8",
+          "sha256_actual": "04f0d25ca474494cb707e752170f6c22cdcb8ae2b5fb80872143e18d5cc463f8"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsans9-oblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 101068,
+          "size_actual": 101068,
+          "sha256_expected": "ac0535d7d4a8eb1b531c5faeb9060a4b9bac397d72cf54191ef53eea6f66b617",
+          "sha256_actual": "ac0535d7d4a8eb1b531c5faeb9060a4b9bac397d72cf54191ef53eea6f66b617"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsans9-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 94552,
+          "size_actual": 94552,
+          "sha256_expected": "80ef596460b7b402621780f7cd73a348efedc4cd2c6deca37da58f07ee61b85d",
+          "sha256_actual": "80ef596460b7b402621780f7cd73a348efedc4cd2c6deca37da58f07ee61b85d"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsansdemicond10-oblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 114848,
+          "size_actual": 114848,
+          "sha256_expected": "f98ed7d9cc5e10fd5c8e01f6ea708fddff5bbbf6f4503998c92b3c1f26d68d33",
+          "sha256_actual": "f98ed7d9cc5e10fd5c8e01f6ea708fddff5bbbf6f4503998c92b3c1f26d68d33"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsansdemicond10-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 106836,
+          "size_actual": 106836,
+          "sha256_expected": "3a8cc8f72acaf6d4cc9200a838e5e118bf6f265233aa078e105559f6db6c2948",
+          "sha256_actual": "3a8cc8f72acaf6d4cc9200a838e5e118bf6f265233aa078e105559f6db6c2948"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsansquot8-bold.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 106232,
+          "size_actual": 106232,
+          "sha256_expected": "44cd928f556c68c3a6ce5938f6968c3da7b3d9d14d3c8add54005f0cc5e39a53",
+          "sha256_actual": "44cd928f556c68c3a6ce5938f6968c3da7b3d9d14d3c8add54005f0cc5e39a53"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsansquot8-boldoblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 112456,
+          "size_actual": 112456,
+          "sha256_expected": "0cac0a6909c1cb33df8d3aeda2817ef2671d7f466cc352d826551bf92ca5f877",
+          "sha256_actual": "0cac0a6909c1cb33df8d3aeda2817ef2671d7f466cc352d826551bf92ca5f877"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsansquot8-oblique.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 112648,
+          "size_actual": 112648,
+          "sha256_expected": "d858d237a69d432ca0ff67b930dabf5a60bfde69ca39bc555fab78ecbb5f4e4d",
+          "sha256_actual": "d858d237a69d432ca0ff67b930dabf5a60bfde69ca39bc555fab78ecbb5f4e4d"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/fonts/opentype/public/lm/lmsansquot8-regular.otf",
+        "passed": true,
+        "details": {
+          "size_expected": 105172,
+          "size_actual": 105172,
+          "sha256_expected": "5da041def6d17825bb9b2d1d4fef66099a1e871005c08fc8f0d29976a923f4c9",
+          "sha256_actual": "5da041def6d17825bb9b2d1d4fef66099a1e871005c08fc8f0d29976a923f4c9"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/source/latex/ctex/ctex-zhconv-make.lua",
+        "passed": true,
+        "details": {
+          "size_expected": 4099,
+          "size_actual": 4099,
+          "sha256_expected": "13436ed5b8fa45f6ee1708cbaed03d4e3c2ebd3bcc02a9de4a6668f2e445e78e",
+          "sha256_actual": "13436ed5b8fa45f6ee1708cbaed03d4e3c2ebd3bcc02a9de4a6668f2e445e78e"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/source/latex/ctex/ctex.dtx",
+        "passed": true,
+        "details": {
+          "size_expected": 457152,
+          "size_actual": 457152,
+          "sha256_expected": "f580a06cc1ca6f8db0e68a9f844b9ed28e64feaaaf4b7a300bb55327978fe88d",
+          "sha256_actual": "f580a06cc1ca6f8db0e68a9f844b9ed28e64feaaaf4b7a300bb55327978fe88d"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/source/latex/ctex/ctex.ins",
+        "passed": true,
+        "details": {
+          "size_expected": 17657,
+          "size_actual": 17657,
+          "sha256_expected": "96ff80dae0e3e806cdbabab1a13bcb18463d14938bbdfa8744dd7ef8fa12cd49",
+          "sha256_actual": "96ff80dae0e3e806cdbabab1a13bcb18463d14938bbdfa8744dd7ef8fa12cd49"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/source/latex/ctex/ctexpunct.spa",
+        "passed": true,
+        "details": {
+          "size_expected": 9752,
+          "size_actual": 9752,
+          "sha256_expected": "4bb757e8fedf3bb861a8fd22ba4855c06cf7fdd86a0f822fcc328e745598a724",
+          "sha256_actual": "4bb757e8fedf3bb861a8fd22ba4855c06cf7fdd86a0f822fcc328e745598a724"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/source/latex/zhnumber/zhnumber.dtx",
+        "passed": true,
+        "details": {
+          "size_expected": 69446,
+          "size_actual": 69446,
+          "sha256_expected": "af3ffce2b3fc1b667d17fef9648be7df18d9a694f06fcb7baaee8a26bc316700",
+          "sha256_actual": "af3ffce2b3fc1b667d17fef9648be7df18d9a694f06fcb7baaee8a26bc316700"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/source/latex/zhnumber/zhnumber.ins",
+        "passed": true,
+        "details": {
+          "size_expected": 3379,
+          "size_actual": 3379,
+          "sha256_expected": "94732cc01fbf9a6a0a3d554c6c2c3c992beb9d18145ee7d8829da2ba871ff739",
+          "sha256_actual": "94732cc01fbf9a6a0a3d554c6c2c3c992beb9d18145ee7d8829da2ba871ff739"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/source/xelatex/xecjk/xeCJK.dtx",
+        "passed": true,
+        "details": {
+          "size_expected": 518377,
+          "size_actual": 518377,
+          "sha256_expected": "fe88920c919261ee30286a13264e4b4198e7d3bf9edd2e5066fe5bbec46df54f",
+          "sha256_actual": "fe88920c919261ee30286a13264e4b4198e7d3bf9edd2e5066fe5bbec46df54f"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/source/xelatex/xecjk/xeCJK.ins",
+        "passed": true,
+        "details": {
+          "size_expected": 7936,
+          "size_actual": 7936,
+          "sha256_expected": "1028d9de2c2f8e036dd4fd1ef83093535ed84648920a710fee0e04c4d9d68a9e",
+          "sha256_actual": "1028d9de2c2f8e036dd4fd1ef83093535ed84648920a710fee0e04c4d9d68a9e"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/generic/ctex/ctex-spa-macro.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 2870,
+          "size_actual": 2870,
+          "sha256_expected": "f07f09b9d914284533e153abf0b44301cee8478195a65b45257f91f00d06b565",
+          "sha256_actual": "f07f09b9d914284533e153abf0b44301cee8478195a65b45257f91f00d06b565"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/generic/ctex/ctex-spa-make.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 2885,
+          "size_actual": 2885,
+          "sha256_expected": "7215e19384cd6ed923a12c07e3c4cd7e92a3915ac7d5619c60b33f2a0862a262",
+          "sha256_actual": "7215e19384cd6ed923a12c07e3c4cd7e92a3915ac7d5619c60b33f2a0862a262"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/generic/ctex/ctxdocstrip.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 2894,
+          "size_actual": 2894,
+          "sha256_expected": "424e0e0d75ed144d5dfdf0b67a97325074b7897fcd191bf3e07d3abc2af7aba6",
+          "sha256_actual": "424e0e0d75ed144d5dfdf0b67a97325074b7897fcd191bf3e07d3abc2af7aba6"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/generic/ctex/zhmap/ctex-zhmap-adobe.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 4230,
+          "size_actual": 4230,
+          "sha256_expected": "8480c84ca52fca3dac77869e708cf827b26281a1a0967212c28ecbf8afb627b2",
+          "sha256_actual": "8480c84ca52fca3dac77869e708cf827b26281a1a0967212c28ecbf8afb627b2"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/generic/ctex/zhmap/ctex-zhmap-fandol.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 4159,
+          "size_actual": 4159,
+          "sha256_expected": "2d28637708399a47aed32bed4f384f6b02d106b0c900e00848a30ed6b9433fcf",
+          "sha256_actual": "2d28637708399a47aed32bed4f384f6b02d106b0c900e00848a30ed6b9433fcf"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/generic/ctex/zhmap/ctex-zhmap-founder.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 5516,
+          "size_actual": 5516,
+          "sha256_expected": "a683ef305f69f3c6283fd27d849681986bf16711eba0a7ebc32e2065ab52d722",
+          "sha256_actual": "a683ef305f69f3c6283fd27d849681986bf16711eba0a7ebc32e2065ab52d722"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/generic/ctex/zhmap/ctex-zhmap-mac.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 4608,
+          "size_actual": 4608,
+          "sha256_expected": "fef8faf8034cf90a44f3dc6f96b27f1cf21c39dc5a6de6f8f2106e3ea38fd79a",
+          "sha256_actual": "fef8faf8034cf90a44f3dc6f96b27f1cf21c39dc5a6de6f8f2106e3ea38fd79a"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/generic/ctex/zhmap/ctex-zhmap-ubuntu.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 4113,
+          "size_actual": 4113,
+          "sha256_expected": "f4b6fd62da43310c1793098ffb05b50cdd2aed72d2444548f88c54b3e258a39d",
+          "sha256_actual": "f4b6fd62da43310c1793098ffb05b50cdd2aed72d2444548f88c54b3e258a39d"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/generic/ctex/zhmap/ctex-zhmap-windows.tex",
+        "passed": true,
+        "details": {
+          "size_expected": 5818,
+          "size_actual": 5818,
+          "sha256_expected": "84c93a6974c42fbf6a63156ccb5d96301cc2d31b358feac088806409e7711959",
+          "sha256_actual": "84c93a6974c42fbf6a63156ccb5d96301cc2d31b358feac088806409e7711959"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/config/ctex-name-gbk.cfg",
+        "passed": true,
+        "details": {
+          "size_expected": 1730,
+          "size_actual": 1730,
+          "sha256_expected": "38dc197ebda4b6b4a7f76f8587359e42beac46bc9ecf1f8c56bc5e459a860299",
+          "sha256_actual": "38dc197ebda4b6b4a7f76f8587359e42beac46bc9ecf1f8c56bc5e459a860299"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/config/ctex-name-utf8.cfg",
+        "passed": true,
+        "details": {
+          "size_expected": 1770,
+          "size_actual": 1770,
+          "sha256_expected": "778bb83f395cf149e33db9980ff12946927c778faeaecd69fba0ebf50326f587",
+          "sha256_actual": "778bb83f395cf149e33db9980ff12946927c778faeaecd69fba0ebf50326f587"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/config/ctex.cfg",
+        "passed": true,
+        "details": {
+          "size_expected": 1230,
+          "size_actual": 1230,
+          "sha256_expected": "4a8ec7a1657410266fafa163ce656c923b714c53818e99dbeafbc08ac99709b8",
+          "sha256_actual": "4a8ec7a1657410266fafa163ce656c923b714c53818e99dbeafbc08ac99709b8"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/config/ctexbackend.cfg",
+        "passed": true,
+        "details": {
+          "size_expected": 1904,
+          "size_actual": 1904,
+          "sha256_expected": "ac452bc753fc440c29e73a0319f17148524412b3e67478e2012dbc50af0e605f",
+          "sha256_actual": "ac452bc753fc440c29e73a0319f17148524412b3e67478e2012dbc50af0e605f"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/config/ctexopts.cfg",
+        "passed": true,
+        "details": {
+          "size_expected": 1291,
+          "size_actual": 1291,
+          "sha256_expected": "57def444aad796d361c44f4b3be4f8221042df015de9fdc97010fb7f842b39ef",
+          "sha256_actual": "57def444aad796d361c44f4b3be4f8221042df015de9fdc97010fb7f842b39ef"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/ctex-c5size.clo",
+        "passed": true,
+        "details": {
+          "size_expected": 2616,
+          "size_actual": 2616,
+          "sha256_expected": "bbcb9f53fee79765958176b580622721feb7b8691454f5ba0b68baae52d300e8",
+          "sha256_actual": "bbcb9f53fee79765958176b580622721feb7b8691454f5ba0b68baae52d300e8"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/ctex-cs4size.clo",
+        "passed": true,
+        "details": {
+          "size_expected": 2637,
+          "size_actual": 2637,
+          "sha256_expected": "fd540d05bd7689c022b2410b4563fb5891c1eeffd5a017b3c9a7a9f9aa538a51",
+          "sha256_actual": "fd540d05bd7689c022b2410b4563fb5891c1eeffd5a017b3c9a7a9f9aa538a51"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/ctex.sty",
+        "passed": true,
+        "details": {
+          "size_expected": 32650,
+          "size_actual": 32650,
+          "sha256_expected": "dd868cf1e82815ff9544e222c5eebe528dfc7799b69f7fe1762646ebe23dcd6b",
+          "sha256_actual": "dd868cf1e82815ff9544e222c5eebe528dfc7799b69f7fe1762646ebe23dcd6b"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/ctexart.cls",
+        "passed": true,
+        "details": {
+          "size_expected": 55219,
+          "size_actual": 55219,
+          "sha256_expected": "822d4a8c15e964c068c28be77c026ab891c4ab5b224503546c2994ac077efd93",
+          "sha256_actual": "822d4a8c15e964c068c28be77c026ab891c4ab5b224503546c2994ac077efd93"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/ctexbeamer.cls",
+        "passed": true,
+        "details": {
+          "size_expected": 39382,
+          "size_actual": 39382,
+          "sha256_expected": "6f731df93444ca969bd155f58eac78cccf6d92e2e381b9f72fcedb9666b5069b",
+          "sha256_actual": "6f731df93444ca969bd155f58eac78cccf6d92e2e381b9f72fcedb9666b5069b"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/ctexbook.cls",
+        "passed": true,
+        "details": {
+          "size_expected": 58747,
+          "size_actual": 58747,
+          "sha256_expected": "1d75b5d67fa79f771326658235498a64c94c0de2bd4538c16f7ba49169ecb65b",
+          "sha256_actual": "1d75b5d67fa79f771326658235498a64c94c0de2bd4538c16f7ba49169ecb65b"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/ctexcap.sty",
+        "passed": true,
+        "details": {
+          "size_expected": 1838,
+          "size_actual": 1838,
+          "sha256_expected": "30ef22fbaa8ee3864e752ab089433e06dbdfed2c16256b1113063afaded21491",
+          "sha256_actual": "30ef22fbaa8ee3864e752ab089433e06dbdfed2c16256b1113063afaded21491"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/ctexheading.sty",
+        "passed": true,
+        "details": {
+          "size_expected": 8606,
+          "size_actual": 8606,
+          "sha256_expected": "c5f40e1dfa9e63e30d04620035cc4a6c0f025e4bf729196b54725d1e2618fa23",
+          "sha256_actual": "c5f40e1dfa9e63e30d04620035cc4a6c0f025e4bf729196b54725d1e2618fa23"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/ctexhook.sty",
+        "passed": true,
+        "details": {
+          "size_expected": 6505,
+          "size_actual": 6505,
+          "sha256_expected": "40e83f5ed34900870bb14fbe09dc24440bb98bc01813e28c59575c69134ffae6",
+          "sha256_actual": "40e83f5ed34900870bb14fbe09dc24440bb98bc01813e28c59575c69134ffae6"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/ctexpatch.sty",
+        "passed": true,
+        "details": {
+          "size_expected": 8448,
+          "size_actual": 8448,
+          "sha256_expected": "9f7980ed971ea9ee22583726d4760ebcba5a6e4cc2edc1576f2b71b613d64c29",
+          "sha256_actual": "9f7980ed971ea9ee22583726d4760ebcba5a6e4cc2edc1576f2b71b613d64c29"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/ctexrep.cls",
+        "passed": true,
+        "details": {
+          "size_expected": 58604,
+          "size_actual": 58604,
+          "sha256_expected": "aa28de78a0bee0ac97c9ab4f5da7ea2c83276d207a2ff2e6d5224297343515da",
+          "sha256_actual": "aa28de78a0bee0ac97c9ab4f5da7ea2c83276d207a2ff2e6d5224297343515da"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/ctexsize.sty",
+        "passed": true,
+        "details": {
+          "size_expected": 10396,
+          "size_actual": 10396,
+          "sha256_expected": "a6032914268ff42c0d721bbb4070ad5598f7f8aa36046f8315a14b3932770fad",
+          "sha256_actual": "a6032914268ff42c0d721bbb4070ad5598f7f8aa36046f8315a14b3932770fad"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/ctexspa.def",
+        "passed": true,
+        "details": {
+          "size_expected": 10881,
+          "size_actual": 10881,
+          "sha256_expected": "87b85009ae75ed01e10f018c29a38c488df9eb988bcf09401e4b614fb7326294",
+          "sha256_actual": "87b85009ae75ed01e10f018c29a38c488df9eb988bcf09401e4b614fb7326294"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/ctxdoc.cls",
+        "passed": true,
+        "details": {
+          "size_expected": 30714,
+          "size_actual": 30714,
+          "sha256_expected": "f0d71fe9ae4f0491bb64f88520958145a9a7709a38a51c9988d826f10cc25a81",
+          "sha256_actual": "f0d71fe9ae4f0491bb64f88520958145a9a7709a38a51c9988d826f10cc25a81"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/dictionary/translator-theorem-dictionary-ChineseGBK.dict",
+        "passed": true,
+        "details": {
+          "size_expected": 4320,
+          "size_actual": 4320,
+          "sha256_expected": "4bdeca75d75051f5531e08e1e357ce07c63fbb2f22d45fd2d048c1ab99ac2ced",
+          "sha256_actual": "4bdeca75d75051f5531e08e1e357ce07c63fbb2f22d45fd2d048c1ab99ac2ced"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/dictionary/translator-theorem-dictionary-ChineseUTF8.dict",
+        "passed": true,
+        "details": {
+          "size_expected": 4520,
+          "size_actual": 4520,
+          "sha256_expected": "5dabaa80bfaa77148829cf23f5e4d109ea7bac7960dbb2d456fba3596c1aa1d6",
+          "sha256_actual": "5dabaa80bfaa77148829cf23f5e4d109ea7bac7960dbb2d456fba3596c1aa1d6"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/engine/ctex-engine-aptex.def",
+        "passed": true,
+        "details": {
+          "size_expected": 10160,
+          "size_actual": 10160,
+          "sha256_expected": "14fd2307f8f81d8cd4e601186dd0a5fcedf54642d86c7a0745be8ab080bfdd72",
+          "sha256_actual": "14fd2307f8f81d8cd4e601186dd0a5fcedf54642d86c7a0745be8ab080bfdd72"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/engine/ctex-engine-luatex.def",
+        "passed": true,
+        "details": {
+          "size_expected": 46544,
+          "size_actual": 46544,
+          "sha256_expected": "bf13ba55952bcf8785777dab84c8a9f00b65029aee8049b533f50bcfeb4049ff",
+          "sha256_actual": "bf13ba55952bcf8785777dab84c8a9f00b65029aee8049b533f50bcfeb4049ff"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/engine/ctex-engine-pdftex.def",
+        "passed": true,
+        "details": {
+          "size_expected": 20297,
+          "size_actual": 20297,
+          "sha256_expected": "ef2c0374bf6748a86790c903d1bf809269146a2a1720519cd5fe7d61c2cdc106",
+          "sha256_actual": "ef2c0374bf6748a86790c903d1bf809269146a2a1720519cd5fe7d61c2cdc106"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/engine/ctex-engine-uptex.def",
+        "passed": true,
+        "details": {
+          "size_expected": 10155,
+          "size_actual": 10155,
+          "sha256_expected": "2530bcc8a42d5063db0eafd48df2300456f0066e643b0d721e4eca99cc311fea",
+          "sha256_actual": "2530bcc8a42d5063db0eafd48df2300456f0066e643b0d721e4eca99cc311fea"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/engine/ctex-engine-xetex.def",
+        "passed": true,
+        "details": {
+          "size_expected": 4760,
+          "size_actual": 4760,
+          "sha256_expected": "23ca571bb8631b994e041e09b9a8dadf3ba5b75240e1774f6f61b97589287d0e",
+          "sha256_actual": "23ca571bb8631b994e041e09b9a8dadf3ba5b75240e1774f6f61b97589287d0e"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fd/c19rm.fd",
+        "passed": true,
+        "details": {
+          "size_expected": 1839,
+          "size_actual": 1839,
+          "sha256_expected": "15dbc27abc9cc59f7088cb38f3bb2219527eabdf4d41e41d5ad206379fbe2025",
+          "sha256_actual": "15dbc27abc9cc59f7088cb38f3bb2219527eabdf4d41e41d5ad206379fbe2025"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fd/c19sf.fd",
+        "passed": true,
+        "details": {
+          "size_expected": 1833,
+          "size_actual": 1833,
+          "sha256_expected": "f607aefc069d2a85b7af531d12de2952e67143be1c3f9623fa2918a87c4e10c0",
+          "sha256_actual": "f607aefc069d2a85b7af531d12de2952e67143be1c3f9623fa2918a87c4e10c0"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fd/c19tt.fd",
+        "passed": true,
+        "details": {
+          "size_expected": 1824,
+          "size_actual": 1824,
+          "sha256_expected": "ce1ed4e7e671e526cb872d1ea5a20efc80e83aeb845bc22a6e6a9021539877b9",
+          "sha256_actual": "ce1ed4e7e671e526cb872d1ea5a20efc80e83aeb845bc22a6e6a9021539877b9"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fd/c70rm.fd",
+        "passed": true,
+        "details": {
+          "size_expected": 1820,
+          "size_actual": 1820,
+          "sha256_expected": "b131d54e23a2d6a2c0fb207f1b336d04da293d8dfbd56846d615fcc3b41eb64b",
+          "sha256_actual": "b131d54e23a2d6a2c0fb207f1b336d04da293d8dfbd56846d615fcc3b41eb64b"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fd/c70sf.fd",
+        "passed": true,
+        "details": {
+          "size_expected": 1814,
+          "size_actual": 1814,
+          "sha256_expected": "f08707e8fb2a4b86c5e17d9de561db307e6f90760ccdfb0e9238e95e0cb9494d",
+          "sha256_actual": "f08707e8fb2a4b86c5e17d9de561db307e6f90760ccdfb0e9238e95e0cb9494d"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fd/c70tt.fd",
+        "passed": true,
+        "details": {
+          "size_expected": 1805,
+          "size_actual": 1805,
+          "sha256_expected": "1838b28607b682895568973b39944dc1e720e5dab716c744621c3ba8aaff5790",
+          "sha256_actual": "1838b28607b682895568973b39944dc1e720e5dab716c744621c3ba8aaff5790"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fd/jt2zhrm.fd",
+        "passed": true,
+        "details": {
+          "size_expected": 1365,
+          "size_actual": 1365,
+          "sha256_expected": "60da18a1863ea71ccabece1877639c92a3fd433b04772b68d3ce0f30c012eed7",
+          "sha256_actual": "60da18a1863ea71ccabece1877639c92a3fd433b04772b68d3ce0f30c012eed7"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fd/jt2zhsf.fd",
+        "passed": true,
+        "details": {
+          "size_expected": 1305,
+          "size_actual": 1305,
+          "sha256_expected": "2fbda08a2c6e8c3e5997149d37fa8eecfd7bc5c7eeacafbbb281054cf1256157",
+          "sha256_actual": "2fbda08a2c6e8c3e5997149d37fa8eecfd7bc5c7eeacafbbb281054cf1256157"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fd/jt2zhtt.fd",
+        "passed": true,
+        "details": {
+          "size_expected": 1196,
+          "size_actual": 1196,
+          "sha256_expected": "4e8e13172ec5472ea88aed1f8aae2b1d0224b889d577bc3e05f104b9052ed8f3",
+          "sha256_actual": "4e8e13172ec5472ea88aed1f8aae2b1d0224b889d577bc3e05f104b9052ed8f3"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fd/jy2zhrm.fd",
+        "passed": true,
+        "details": {
+          "size_expected": 1365,
+          "size_actual": 1365,
+          "sha256_expected": "254208299993bcefe804bd2b28f79178d98b4c12daba33850fd061e7c2388405",
+          "sha256_actual": "254208299993bcefe804bd2b28f79178d98b4c12daba33850fd061e7c2388405"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fd/jy2zhsf.fd",
+        "passed": true,
+        "details": {
+          "size_expected": 1305,
+          "size_actual": 1305,
+          "sha256_expected": "9423fcde946caf95e6fcb18d967554027204b80af0ae1e80714b2c5dd49b88e8",
+          "sha256_actual": "9423fcde946caf95e6fcb18d967554027204b80af0ae1e80714b2c5dd49b88e8"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fd/jy2zhtt.fd",
+        "passed": true,
+        "details": {
+          "size_expected": 1196,
+          "size_actual": 1196,
+          "sha256_expected": "7b7c8cc5e84f3782d4fa43a8189ff6417c491607a3ae3a55a4cc7403f7f5f5ed",
+          "sha256_actual": "7b7c8cc5e84f3782d4fa43a8189ff6417c491607a3ae3a55a4cc7403f7f5f5ed"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fontset/ctex-fontset-adobe.def",
+        "passed": true,
+        "details": {
+          "size_expected": 4143,
+          "size_actual": 4143,
+          "sha256_expected": "f150471619d50e26ab4cead5a40608ea65b9c7d4ce5a593ced7671b33da63108",
+          "sha256_actual": "f150471619d50e26ab4cead5a40608ea65b9c7d4ce5a593ced7671b33da63108"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fontset/ctex-fontset-fandol.def",
+        "passed": true,
+        "details": {
+          "size_expected": 4554,
+          "size_actual": 4554,
+          "sha256_expected": "b40e53afbc885efc048c7a54cb3cea41f236eebe3c5164b12b60cacfa1193897",
+          "sha256_actual": "b40e53afbc885efc048c7a54cb3cea41f236eebe3c5164b12b60cacfa1193897"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fontset/ctex-fontset-founder.def",
+        "passed": true,
+        "details": {
+          "size_expected": 4431,
+          "size_actual": 4431,
+          "sha256_expected": "329b6479fb33e4fc2f99de5cdbf0ea37331ea406bab5dff227a9fb4b89bd5faa",
+          "sha256_actual": "329b6479fb33e4fc2f99de5cdbf0ea37331ea406bab5dff227a9fb4b89bd5faa"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fontset/ctex-fontset-mac.def",
+        "passed": true,
+        "details": {
+          "size_expected": 1427,
+          "size_actual": 1427,
+          "sha256_expected": "8b76f3297eab28b12e1f035642a8f72414b12a4274d73a2f969df78949f087f1",
+          "sha256_actual": "8b76f3297eab28b12e1f035642a8f72414b12a4274d73a2f969df78949f087f1"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fontset/ctex-fontset-macnew.def",
+        "passed": true,
+        "details": {
+          "size_expected": 5350,
+          "size_actual": 5350,
+          "sha256_expected": "1e158c46ab8e2e6b25de021b2c0185b8a5320b6341ef22c813dfd5c0db274b7f",
+          "sha256_actual": "1e158c46ab8e2e6b25de021b2c0185b8a5320b6341ef22c813dfd5c0db274b7f"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fontset/ctex-fontset-macold.def",
+        "passed": true,
+        "details": {
+          "size_expected": 2068,
+          "size_actual": 2068,
+          "sha256_expected": "722acd8b61e0a783288f96be56dcfb50794b88b8596978b8b7beed1cf36bda8c",
+          "sha256_actual": "722acd8b61e0a783288f96be56dcfb50794b88b8596978b8b7beed1cf36bda8c"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fontset/ctex-fontset-ubuntu.def",
+        "passed": true,
+        "details": {
+          "size_expected": 3984,
+          "size_actual": 3984,
+          "sha256_expected": "c37bb5d74fb723fc04fc840d4e7d74e2018b21d998abb861eaa795b346f20678",
+          "sha256_actual": "c37bb5d74fb723fc04fc840d4e7d74e2018b21d998abb861eaa795b346f20678"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/fontset/ctex-fontset-windows.def",
+        "passed": true,
+        "details": {
+          "size_expected": 4952,
+          "size_actual": 4952,
+          "sha256_expected": "2b96fb8a96e08299b552cf32b6e8a173f66143dfc7142d294ea280329d924b7d",
+          "sha256_actual": "2b96fb8a96e08299b552cf32b6e8a173f66143dfc7142d294ea280329d924b7d"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/heading/ctex-heading-article.def",
+        "passed": true,
+        "details": {
+          "size_expected": 24735,
+          "size_actual": 24735,
+          "sha256_expected": "1c4d48dee90c9b50179287e6b5c50d150fbd6a4bbb71a9f693dd2841bc71aec6",
+          "sha256_actual": "1c4d48dee90c9b50179287e6b5c50d150fbd6a4bbb71a9f693dd2841bc71aec6"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/heading/ctex-heading-beamer.def",
+        "passed": true,
+        "details": {
+          "size_expected": 9077,
+          "size_actual": 9077,
+          "sha256_expected": "64f95fe9222915613d639231866c25acbc4229cfe838c6605150d0a4d66e3f75",
+          "sha256_actual": "64f95fe9222915613d639231866c25acbc4229cfe838c6605150d0a4d66e3f75"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/heading/ctex-heading-book.def",
+        "passed": true,
+        "details": {
+          "size_expected": 28253,
+          "size_actual": 28253,
+          "sha256_expected": "6763abf46497a8b827d548c0b8d5fd58dc6a036782d07592738924c86088af20",
+          "sha256_actual": "6763abf46497a8b827d548c0b8d5fd58dc6a036782d07592738924c86088af20"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/heading/ctex-heading-report.def",
+        "passed": true,
+        "details": {
+          "size_expected": 28118,
+          "size_actual": 28118,
+          "sha256_expected": "04942ad3f262c1fe911a5545213895a1f21f37b860d82026bd9d8289e511fea9",
+          "sha256_actual": "04942ad3f262c1fe911a5545213895a1f21f37b860d82026bd9d8289e511fea9"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/scheme/ctex-scheme-chinese-article.def",
+        "passed": true,
+        "details": {
+          "size_expected": 4622,
+          "size_actual": 4622,
+          "sha256_expected": "cb6461f507b40cbc30f910403081fec6932ce412abcf6e4865e0c88e35596fc4",
+          "sha256_actual": "cb6461f507b40cbc30f910403081fec6932ce412abcf6e4865e0c88e35596fc4"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/scheme/ctex-scheme-chinese-beamer.def",
+        "passed": true,
+        "details": {
+          "size_expected": 2785,
+          "size_actual": 2785,
+          "sha256_expected": "bef8408806f6f508c78fcbfaebd017459dad13985e11d8f8805a835ba7d771f6",
+          "sha256_actual": "bef8408806f6f508c78fcbfaebd017459dad13985e11d8f8805a835ba7d771f6"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/scheme/ctex-scheme-chinese-book.def",
+        "passed": true,
+        "details": {
+          "size_expected": 5190,
+          "size_actual": 5190,
+          "sha256_expected": "88f02b637c6861f82036dafaec946870373d9955a7b4d58c45ae4ec299c5f98a",
+          "sha256_actual": "88f02b637c6861f82036dafaec946870373d9955a7b4d58c45ae4ec299c5f98a"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/scheme/ctex-scheme-chinese-report.def",
+        "passed": true,
+        "details": {
+          "size_expected": 5200,
+          "size_actual": 5200,
+          "sha256_expected": "e714dd8d4e0996ea205e6df90ac0da4c9751e55d10ca1a0afc35f6b3fc7af8e2",
+          "sha256_actual": "e714dd8d4e0996ea205e6df90ac0da4c9751e55d10ca1a0afc35f6b3fc7af8e2"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/scheme/ctex-scheme-chinese.def",
+        "passed": true,
+        "details": {
+          "size_expected": 2309,
+          "size_actual": 2309,
+          "sha256_expected": "06dff6fd73d34cfa6d65d6c20f2ef043844f4076b9ea7cff91554f582587f4b9",
+          "sha256_actual": "06dff6fd73d34cfa6d65d6c20f2ef043844f4076b9ea7cff91554f582587f4b9"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/scheme/ctex-scheme-plain-article.def",
+        "passed": true,
+        "details": {
+          "size_expected": 4089,
+          "size_actual": 4089,
+          "sha256_expected": "096c5920e40dbbbc3986d7212bdffb76c490dc9532f0b6c380346c0fb747172f",
+          "sha256_actual": "096c5920e40dbbbc3986d7212bdffb76c490dc9532f0b6c380346c0fb747172f"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/scheme/ctex-scheme-plain-beamer.def",
+        "passed": true,
+        "details": {
+          "size_expected": 2414,
+          "size_actual": 2414,
+          "sha256_expected": "c8f37202a337aba58589513d4d95609af4ea662593be00238adb043c17b4b5ed",
+          "sha256_actual": "c8f37202a337aba58589513d4d95609af4ea662593be00238adb043c17b4b5ed"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/scheme/ctex-scheme-plain-book.def",
+        "passed": true,
+        "details": {
+          "size_expected": 4802,
+          "size_actual": 4802,
+          "sha256_expected": "97e21f0ed3fc14703dadf956dcde4df130bacf427c34542bbff82f1c7d2b9d75",
+          "sha256_actual": "97e21f0ed3fc14703dadf956dcde4df130bacf427c34542bbff82f1c7d2b9d75"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/scheme/ctex-scheme-plain-report.def",
+        "passed": true,
+        "details": {
+          "size_expected": 4812,
+          "size_actual": 4812,
+          "sha256_expected": "d17e99bf07e99ea134038fe3967fbdef9b9c23fc24da0eec2c105a6cca7409d2",
+          "sha256_actual": "d17e99bf07e99ea134038fe3967fbdef9b9c23fc24da0eec2c105a6cca7409d2"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/ctex/scheme/ctex-scheme-plain.def",
+        "passed": true,
+        "details": {
+          "size_expected": 1277,
+          "size_actual": 1277,
+          "sha256_expected": "8d49bcc2f5f63ce60f5c292cb840bb1a8f6c49e348db8892d67cf36529e5eabf",
+          "sha256_actual": "8d49bcc2f5f63ce60f5c292cb840bb1a8f6c49e348db8892d67cf36529e5eabf"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/zhnumber/zhnumber-big5.cfg",
+        "passed": true,
+        "details": {
+          "size_expected": 4940,
+          "size_actual": 4940,
+          "sha256_expected": "5a39a2d3295836f7911b3b4bef1404ebf67762c415a8c6f51df2e627a978fc90",
+          "sha256_actual": "5a39a2d3295836f7911b3b4bef1404ebf67762c415a8c6f51df2e627a978fc90"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/zhnumber/zhnumber-gbk.cfg",
+        "passed": true,
+        "details": {
+          "size_expected": 5607,
+          "size_actual": 5607,
+          "sha256_expected": "9b25259f0a0ccc18796d0266e0f0f7947d72bc4befa556e3758aeeb2e1d37aee",
+          "sha256_actual": "9b25259f0a0ccc18796d0266e0f0f7947d72bc4befa556e3758aeeb2e1d37aee"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/zhnumber/zhnumber-utf8.cfg",
+        "passed": true,
+        "details": {
+          "size_expected": 5700,
+          "size_actual": 5700,
+          "sha256_expected": "55de8dddc989474abc973f76fb08a19321650046584f6b54e7e746a0cb30ba54",
+          "sha256_actual": "55de8dddc989474abc973f76fb08a19321650046584f6b54e7e746a0cb30ba54"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/latex/zhnumber/zhnumber.sty",
+        "passed": true,
+        "details": {
+          "size_expected": 38160,
+          "size_actual": 38160,
+          "sha256_expected": "eb315870e85d0bbce058f52ac9dfd16c177a98ffba1abedd0eca29a7fdd952ae",
+          "sha256_actual": "eb315870e85d0bbce058f52ac9dfd16c177a98ffba1abedd0eca29a7fdd952ae"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/luatex/ctex/ctex-zhconv-index.lua",
+        "passed": true,
+        "details": {
+          "size_expected": 966719,
+          "size_actual": 966719,
+          "sha256_expected": "c3cc5956530d21f71b148af587c42adbd90df5df28974937455612b0b1fbab7c",
+          "sha256_actual": "c3cc5956530d21f71b148af587c42adbd90df5df28974937455612b0b1fbab7c"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/luatex/ctex/ctex-zhconv.lua",
+        "passed": true,
+        "details": {
+          "size_expected": 6180,
+          "size_actual": 6180,
+          "sha256_expected": "b1f73e869c96c73781c9a0beee2d002c3fd05f96df3f88696c0048cadb4d0178",
+          "sha256_actual": "b1f73e869c96c73781c9a0beee2d002c3fd05f96df3f88696c0048cadb4d0178"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/xelatex/xecjk/xeCJK-listings.sty",
+        "passed": true,
+        "details": {
+          "size_expected": 13930,
+          "size_actual": 13930,
+          "sha256_expected": "1f5a7af47fb1137dabe3a2f700e0664fce3f49eb604c5132f45f52e8138ecac9",
+          "sha256_actual": "1f5a7af47fb1137dabe3a2f700e0664fce3f49eb604c5132f45f52e8138ecac9"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/xelatex/xecjk/xeCJK.cfg",
+        "passed": true,
+        "details": {
+          "size_expected": 408,
+          "size_actual": 408,
+          "sha256_expected": "d4fd750245a9702da242938637ece678b37862da73d1cf7d15df931828482a5c",
+          "sha256_actual": "d4fd750245a9702da242938637ece678b37862da73d1cf7d15df931828482a5c"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/xelatex/xecjk/xeCJK.sty",
+        "passed": true,
+        "details": {
+          "size_expected": 183137,
+          "size_actual": 183137,
+          "sha256_expected": "c61660692befbcec0b52dfb3e2e69b360cbd3e187e07565d722a296df8e893ef",
+          "sha256_actual": "c61660692befbcec0b52dfb3e2e69b360cbd3e187e07565d722a296df8e893ef"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/xelatex/xecjk/xeCJKfntef.sty",
+        "passed": true,
+        "details": {
+          "size_expected": 39577,
+          "size_actual": 39577,
+          "sha256_expected": "3388a7a7d4c88c533d22cc6dbcb0e7b18b6bd1411376bfa5be6c3e5d6df9a35d",
+          "sha256_actual": "3388a7a7d4c88c533d22cc6dbcb0e7b18b6bd1411376bfa5be6c3e5d6df9a35d"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/xelatex/xecjk/xunicode-addon.sty",
+        "passed": true,
+        "details": {
+          "size_expected": 26486,
+          "size_actual": 26486,
+          "sha256_expected": "35a1503066b259f4c603aac031777cc86e1b14ae9aa793199ed2502ae079a026",
+          "sha256_actual": "35a1503066b259f4c603aac031777cc86e1b14ae9aa793199ed2502ae079a026"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tex/xelatex/xecjk/xunicode-extra.def",
+        "passed": true,
+        "details": {
+          "size_expected": 61684,
+          "size_actual": 61684,
+          "sha256_expected": "2563fa4faadcdb8c39de05fb9f98431685f617dd08a5cad81da2b60d1c59646c",
+          "sha256_actual": "2563fa4faadcdb8c39de05fb9f98431685f617dd08a5cad81da2b60d1c59646c"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tlpkg/tlpobj/ctex.doc.tlpobj",
+        "passed": true,
+        "details": {
+          "size_expected": 167,
+          "size_actual": 167,
+          "sha256_expected": "cf6c2c313b9ed43c757f4999f7b7490f2a946b0c3ce85b73293b8f4680a4da76",
+          "sha256_actual": "cf6c2c313b9ed43c757f4999f7b7490f2a946b0c3ce85b73293b8f4680a4da76"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tlpkg/tlpobj/ctex.source.tlpobj",
+        "passed": true,
+        "details": {
+          "size_expected": 263,
+          "size_actual": 263,
+          "sha256_expected": "861650a44ca4b6ce7b21a8c6dc7d6b4b60f1b5ed2f107c01e4a40ecd24b9cdfe",
+          "sha256_actual": "861650a44ca4b6ce7b21a8c6dc7d6b4b60f1b5ed2f107c01e4a40ecd24b9cdfe"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tlpkg/tlpobj/ctex.tlpobj",
+        "passed": true,
+        "details": {
+          "size_expected": 4478,
+          "size_actual": 4478,
+          "sha256_expected": "e1f3057309abc218829828d9e997ac6a860c3476f5b69382807e0877188af6bb",
+          "sha256_actual": "e1f3057309abc218829828d9e997ac6a860c3476f5b69382807e0877188af6bb"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tlpkg/tlpobj/xecjk.doc.tlpobj",
+        "passed": true,
+        "details": {
+          "size_expected": 932,
+          "size_actual": 932,
+          "sha256_expected": "0dacbde322b24df323bc3f263d286cd9ef10740c822437c297439e1dc186e0f2",
+          "sha256_actual": "0dacbde322b24df323bc3f263d286cd9ef10740c822437c297439e1dc186e0f2"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tlpkg/tlpobj/xecjk.source.tlpobj",
+        "passed": true,
+        "details": {
+          "size_expected": 188,
+          "size_actual": 188,
+          "sha256_expected": "ccc8146d817855e0e36f899f6c538e680407521f8f8e1d24f7128df7d4048c66",
+          "sha256_actual": "ccc8146d817855e0e36f899f6c538e680407521f8f8e1d24f7128df7d4048c66"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tlpkg/tlpobj/xecjk.tlpobj",
+        "passed": true,
+        "details": {
+          "size_expected": 1471,
+          "size_actual": 1471,
+          "sha256_expected": "0bcb83a52bdd32cad9dc025a652650fd557bf6c1127002d5339252d452e9f95d",
+          "sha256_actual": "0bcb83a52bdd32cad9dc025a652650fd557bf6c1127002d5339252d452e9f95d"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tlpkg/tlpobj/zhnumber.doc.tlpobj",
+        "passed": true,
+        "details": {
+          "size_expected": 186,
+          "size_actual": 186,
+          "sha256_expected": "82c22a093eb6db4622bc15a7cb8679efb9939f4e9f9cc3bfd88170498074fbd4",
+          "sha256_actual": "82c22a093eb6db4622bc15a7cb8679efb9939f4e9f9cc3bfd88170498074fbd4"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tlpkg/tlpobj/zhnumber.source.tlpobj",
+        "passed": true,
+        "details": {
+          "size_expected": 201,
+          "size_actual": 201,
+          "sha256_expected": "6d9a937b6da1467290f998758b3fd4646a82fd6eb43112cf2592220bef050c79",
+          "sha256_actual": "6d9a937b6da1467290f998758b3fd4646a82fd6eb43112cf2592220bef050c79"
+        }
+      },
+      {
+        "name": "file:vendor/texmf/tlpkg/tlpobj/zhnumber.tlpobj",
+        "passed": true,
+        "details": {
+          "size_expected": 904,
+          "size_actual": 904,
+          "sha256_expected": "898db51dde9b69ba673fed441bd60e96173fb3c64d7e8e4d4bf0e262f9c38682",
+          "sha256_actual": "898db51dde9b69ba673fed441bd60e96173fb3c64d7e8e4d4bf0e262f9c38682"
+        }
+      },
+      {
+        "name": "file:verify.py",
+        "passed": true,
+        "details": {
+          "size_expected": 19242,
+          "size_actual": 19242,
+          "sha256_expected": "c305c5359a47291a5b9fcd29b31b6c5c08d0ff4fd8c1f595b78a0561619a0ecd",
+          "sha256_actual": "c305c5359a47291a5b9fcd29b31b6c5c08d0ff4fd8c1f595b78a0561619a0ecd"
+        }
+      },
+      {
+        "name": "file:新对话接续指令.txt",
+        "passed": true,
+        "details": {
+          "size_expected": 1292,
+          "size_actual": 1292,
+          "sha256_expected": "0e1f84150d09ec5ceb7d0cd19a8e9e8aa87ba39a23bc686316968291e4ef6209",
+          "sha256_actual": "0e1f84150d09ec5ceb7d0cd19a8e9e8aa87ba39a23bc686316968291e4ef6209"
+        }
+      },
+      {
+        "name": "manifest_covers_core_files",
+        "passed": true,
+        "details": {
+          "missing_entries": []
+        }
+      },
+      {
+        "name": "template_has_one_answer_switch",
+        "passed": true,
+        "details": {
+          "occurrences": 1
+        }
+      },
+      {
+        "name": "questions_source_matches_template",
+        "passed": true,
+        "details": {
+          "path": "${EXTRACTED_PROJECT}/src/四年级数学阶段测试_LaTeX试卷版.tex",
+          "switch": "\\answersfalse",
+          "expected_characters": 16408,
+          "actual_characters": 16408
+        }
+      },
+      {
+        "name": "answers_source_matches_template",
+        "passed": true,
+        "details": {
+          "path": "${EXTRACTED_PROJECT}/src/四年级数学阶段测试_LaTeX答案版.tex",
+          "switch": "\\answerstrue",
+          "expected_characters": 16407,
+          "actual_characters": 16407
+        }
+      },
+      {
+        "name": "questions_pdf_exists",
+        "passed": true,
+        "details": {
+          "path": "${EXTRACTED_PROJECT}/build/pdf/四年级数学阶段测试_LaTeX试卷版.pdf"
+        }
+      },
+      {
+        "name": "questions_pdf_two_pages",
+        "passed": true,
+        "details": {
+          "actual": 2,
+          "expected": 2
+        }
+      },
+      {
+        "name": "questions_page_1_a3_landscape",
+        "passed": true,
+        "details": {
+          "page": 1,
+          "width_mm": 419.9996,
+          "height_mm": 297.00009,
+          "non_whitespace_characters": 1278,
+          "red_text_spans": 0,
+          "has_answer_marker": false
+        }
+      },
+      {
+        "name": "questions_page_1_not_blank",
+        "passed": true,
+        "details": {
+          "non_whitespace_characters": 1278,
+          "minimum": 100
+        }
+      },
+      {
+        "name": "questions_page_1_has_no_red_answer_text",
+        "passed": true,
+        "details": {
+          "page": 1,
+          "width_mm": 419.9996,
+          "height_mm": 297.00009,
+          "non_whitespace_characters": 1278,
+          "red_text_spans": 0,
+          "has_answer_marker": false
+        }
+      },
+      {
+        "name": "questions_page_2_a3_landscape",
+        "passed": true,
+        "details": {
+          "page": 2,
+          "width_mm": 419.9996,
+          "height_mm": 297.00009,
+          "non_whitespace_characters": 727,
+          "red_text_spans": 0,
+          "has_answer_marker": false
+        }
+      },
+      {
+        "name": "questions_page_2_not_blank",
+        "passed": true,
+        "details": {
+          "non_whitespace_characters": 727,
+          "minimum": 100
+        }
+      },
+      {
+        "name": "questions_page_2_has_no_red_answer_text",
+        "passed": true,
+        "details": {
+          "page": 2,
+          "width_mm": 419.9996,
+          "height_mm": 297.00009,
+          "non_whitespace_characters": 727,
+          "red_text_spans": 0,
+          "has_answer_marker": false
+        }
+      },
+      {
+        "name": "answers_pdf_exists",
+        "passed": true,
+        "details": {
+          "path": "${EXTRACTED_PROJECT}/build/pdf/四年级数学阶段测试_LaTeX答案版.pdf"
+        }
+      },
+      {
+        "name": "answers_pdf_two_pages",
+        "passed": true,
+        "details": {
+          "actual": 2,
+          "expected": 2
+        }
+      },
+      {
+        "name": "answers_page_1_a3_landscape",
+        "passed": true,
+        "details": {
+          "page": 1,
+          "width_mm": 419.9996,
+          "height_mm": 297.00009,
+          "non_whitespace_characters": 1754,
+          "red_text_spans": 181,
+          "has_answer_marker": false
+        }
+      },
+      {
+        "name": "answers_page_1_not_blank",
+        "passed": true,
+        "details": {
+          "non_whitespace_characters": 1754,
+          "minimum": 100
+        }
+      },
+      {
+        "name": "answers_page_1_has_red_answers",
+        "passed": true,
+        "details": {
+          "page": 1,
+          "width_mm": 419.9996,
+          "height_mm": 297.00009,
+          "non_whitespace_characters": 1754,
+          "red_text_spans": 181,
+          "has_answer_marker": false
+        }
+      },
+      {
+        "name": "answers_page_2_a3_landscape",
+        "passed": true,
+        "details": {
+          "page": 2,
+          "width_mm": 419.9996,
+          "height_mm": 297.00009,
+          "non_whitespace_characters": 1341,
+          "red_text_spans": 230,
+          "has_answer_marker": true
+        }
+      },
+      {
+        "name": "answers_page_2_not_blank",
+        "passed": true,
+        "details": {
+          "non_whitespace_characters": 1341,
+          "minimum": 100
+        }
+      },
+      {
+        "name": "answers_page_2_has_red_answers",
+        "passed": true,
+        "details": {
+          "page": 2,
+          "width_mm": 419.9996,
+          "height_mm": 297.00009,
+          "non_whitespace_characters": 1341,
+          "red_text_spans": 230,
+          "has_answer_marker": true
+        }
+      },
+      {
+        "name": "questions_comparison_page_count",
+        "passed": true,
+        "details": {
+          "actual": 2,
+          "reference": 2
+        }
+      },
+      {
+        "name": "questions_page_1_text_and_render_match",
+        "passed": true,
+        "details": {
+          "page": 1,
+          "text_identical": true,
+          "render_pixels_identical": true,
+          "actual_pixel_dimensions": [
+            2382,
+            1684,
+            3
+          ],
+          "reference_pixel_dimensions": [
+            2382,
+            1684,
+            3
+          ],
+          "actual_pixel_sha256": "68724f1dd60bbfcfccfe8a1b7319274de8b201a15ce44cbe0c943482b148e2fa",
+          "reference_pixel_sha256": "68724f1dd60bbfcfccfe8a1b7319274de8b201a15ce44cbe0c943482b148e2fa"
+        }
+      },
+      {
+        "name": "questions_page_2_text_and_render_match",
+        "passed": true,
+        "details": {
+          "page": 2,
+          "text_identical": true,
+          "render_pixels_identical": true,
+          "actual_pixel_dimensions": [
+            2382,
+            1684,
+            3
+          ],
+          "reference_pixel_dimensions": [
+            2382,
+            1684,
+            3
+          ],
+          "actual_pixel_sha256": "9b3e0425a99097f2afbdf0e7046d40574b37e0e4617e3d4e1a0db715442d7187",
+          "reference_pixel_sha256": "9b3e0425a99097f2afbdf0e7046d40574b37e0e4617e3d4e1a0db715442d7187"
+        }
+      },
+      {
+        "name": "answers_comparison_page_count",
+        "passed": true,
+        "details": {
+          "actual": 2,
+          "reference": 2
+        }
+      },
+      {
+        "name": "answers_page_1_text_and_render_match",
+        "passed": true,
+        "details": {
+          "page": 1,
+          "text_identical": true,
+          "render_pixels_identical": true,
+          "actual_pixel_dimensions": [
+            2382,
+            1684,
+            3
+          ],
+          "reference_pixel_dimensions": [
+            2382,
+            1684,
+            3
+          ],
+          "actual_pixel_sha256": "f11d77d3c542ffdcb8fdcc7e8c69d6ff0fa642b2a409c5dc1de13cd6fad4db91",
+          "reference_pixel_sha256": "f11d77d3c542ffdcb8fdcc7e8c69d6ff0fa642b2a409c5dc1de13cd6fad4db91"
+        }
+      },
+      {
+        "name": "answers_page_2_text_and_render_match",
+        "passed": true,
+        "details": {
+          "page": 2,
+          "text_identical": true,
+          "render_pixels_identical": true,
+          "actual_pixel_dimensions": [
+            2382,
+            1684,
+            3
+          ],
+          "reference_pixel_dimensions": [
+            2382,
+            1684,
+            3
+          ],
+          "actual_pixel_sha256": "f917a285c112d0b1990d5617659a79c8650d5f5a8c48974202f233276fcd6fa6",
+          "reference_pixel_sha256": "f917a285c112d0b1990d5617659a79c8650d5f5a8c48974202f233276fcd6fa6"
+        }
+      }
+    ],
+    "errors": [],
+    "environment_errors": [],
+    "warnings": [],
+    "skipped_checks": [],
+    "manifest": {
+      "path": "${EXTRACTED_PROJECT}/manifest_sha256.json",
+      "skipped": false,
+      "entries": 235,
+      "unlisted_files": []
+    },
+    "pymupdf": {
+      "available": true,
+      "version": "1.26.6"
+    },
+    "pdf_dir": "${EXTRACTED_PROJECT}/build/pdf",
+    "pdfs": [
+      {
+        "kind": "questions",
+        "path": "${EXTRACTED_PROJECT}/build/pdf/四年级数学阶段测试_LaTeX试卷版.pdf",
+        "pages": [
+          {
+            "page": 1,
+            "width_mm": 419.9996,
+            "height_mm": 297.00009,
+            "non_whitespace_characters": 1278,
+            "red_text_spans": 0,
+            "has_answer_marker": false
+          },
+          {
+            "page": 2,
+            "width_mm": 419.9996,
+            "height_mm": 297.00009,
+            "non_whitespace_characters": 727,
+            "red_text_spans": 0,
+            "has_answer_marker": false
+          }
+        ],
+        "sha256": "a9bbf98d5bfa6aea215225af6d3b6a47ce2cf42abb99bb3c5648ac1efeec0c37",
+        "page_count": 2
+      },
+      {
+        "kind": "answers",
+        "path": "${EXTRACTED_PROJECT}/build/pdf/四年级数学阶段测试_LaTeX答案版.pdf",
+        "pages": [
+          {
+            "page": 1,
+            "width_mm": 419.9996,
+            "height_mm": 297.00009,
+            "non_whitespace_characters": 1754,
+            "red_text_spans": 181,
+            "has_answer_marker": false
+          },
+          {
+            "page": 2,
+            "width_mm": 419.9996,
+            "height_mm": 297.00009,
+            "non_whitespace_characters": 1341,
+            "red_text_spans": 230,
+            "has_answer_marker": true
+          }
+        ],
+        "sha256": "160c6c32cced6e1261a6e7de99c1ee83f824142372f73ba132f8c9f3a4e3f697",
+        "page_count": 2
+      }
+    ],
+    "compare_pdf_dir": "${EXTRACTED_PROJECT}/outputs",
+    "pdf_comparisons": [
+      {
+        "kind": "questions",
+        "actual": "${EXTRACTED_PROJECT}/build/pdf/四年级数学阶段测试_LaTeX试卷版.pdf",
+        "reference": "${EXTRACTED_PROJECT}/outputs/四年级数学阶段测试_LaTeX试卷版.pdf",
+        "pages": [
+          {
+            "page": 1,
+            "text_identical": true,
+            "render_pixels_identical": true,
+            "actual_pixel_dimensions": [
+              2382,
+              1684,
+              3
+            ],
+            "reference_pixel_dimensions": [
+              2382,
+              1684,
+              3
+            ],
+            "actual_pixel_sha256": "68724f1dd60bbfcfccfe8a1b7319274de8b201a15ce44cbe0c943482b148e2fa",
+            "reference_pixel_sha256": "68724f1dd60bbfcfccfe8a1b7319274de8b201a15ce44cbe0c943482b148e2fa"
+          },
+          {
+            "page": 2,
+            "text_identical": true,
+            "render_pixels_identical": true,
+            "actual_pixel_dimensions": [
+              2382,
+              1684,
+              3
+            ],
+            "reference_pixel_dimensions": [
+              2382,
+              1684,
+              3
+            ],
+            "actual_pixel_sha256": "9b3e0425a99097f2afbdf0e7046d40574b37e0e4617e3d4e1a0db715442d7187",
+            "reference_pixel_sha256": "9b3e0425a99097f2afbdf0e7046d40574b37e0e4617e3d4e1a0db715442d7187"
+          }
+        ],
+        "actual_sha256": "a9bbf98d5bfa6aea215225af6d3b6a47ce2cf42abb99bb3c5648ac1efeec0c37",
+        "reference_sha256": "5f65bd6923b21632cc4f1df74f1331f68394170ce128bdae31ee57bae75e7c84",
+        "byte_identical": false,
+        "text_and_render_identical": true,
+        "interpretation": "PDF 字节不同，但提取文字和渲染像素一致；不据字节差异认定版式变化。"
+      },
+      {
+        "kind": "answers",
+        "actual": "${EXTRACTED_PROJECT}/build/pdf/四年级数学阶段测试_LaTeX答案版.pdf",
+        "reference": "${EXTRACTED_PROJECT}/outputs/四年级数学阶段测试_LaTeX答案版.pdf",
+        "pages": [
+          {
+            "page": 1,
+            "text_identical": true,
+            "render_pixels_identical": true,
+            "actual_pixel_dimensions": [
+              2382,
+              1684,
+              3
+            ],
+            "reference_pixel_dimensions": [
+              2382,
+              1684,
+              3
+            ],
+            "actual_pixel_sha256": "f11d77d3c542ffdcb8fdcc7e8c69d6ff0fa642b2a409c5dc1de13cd6fad4db91",
+            "reference_pixel_sha256": "f11d77d3c542ffdcb8fdcc7e8c69d6ff0fa642b2a409c5dc1de13cd6fad4db91"
+          },
+          {
+            "page": 2,
+            "text_identical": true,
+            "render_pixels_identical": true,
+            "actual_pixel_dimensions": [
+              2382,
+              1684,
+              3
+            ],
+            "reference_pixel_dimensions": [
+              2382,
+              1684,
+              3
+            ],
+            "actual_pixel_sha256": "f917a285c112d0b1990d5617659a79c8650d5f5a8c48974202f233276fcd6fa6",
+            "reference_pixel_sha256": "f917a285c112d0b1990d5617659a79c8650d5f5a8c48974202f233276fcd6fa6"
+          }
+        ],
+        "actual_sha256": "160c6c32cced6e1261a6e7de99c1ee83f824142372f73ba132f8c9f3a4e3f697",
+        "reference_sha256": "932faaa3db2eb94103bb824a2d6e922a6f548d0d631dfda039ff59070c029a6a",
+        "byte_identical": false,
+        "text_and_render_identical": true,
+        "interpretation": "PDF 字节不同，但提取文字和渲染像素一致；不据字节差异认定版式变化。"
+      }
+    ],
+    "comparison_method": {
+      "text": "PyMuPDF get_text('text', sort=True); normalize CRLF and strip trailing whitespace",
+      "render": "RGB, opaque background, annotations included, exact pixel bytes",
+      "render_dpi": 144,
+      "byte_mismatch_alone_is_failure": false
+    },
+    "status": "passed",
+    "exit_code": 0,
+    "finished_at_utc": "2026-11-19T13:12:58+00:00"
+  }
+}

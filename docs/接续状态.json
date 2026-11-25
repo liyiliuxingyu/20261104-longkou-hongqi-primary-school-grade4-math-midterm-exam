@@ -1,0 +1,93 @@
+{
+  "project": "2026—2027学年度第一学期四年级数学阶段测试",
+  "checkpoint_date": "2026-11-19",
+  "timezone": "Asia/Shanghai",
+  "current_authoritative_files": {
+    "template": "src/exam_template.tex",
+    "questions_source": "src/四年级数学阶段测试_LaTeX试卷版.tex",
+    "answers_source": "src/四年级数学阶段测试_LaTeX答案版.tex",
+    "questions_pdf": "outputs/四年级数学阶段测试_LaTeX试卷版.pdf",
+    "answers_pdf": "outputs/四年级数学阶段测试_LaTeX答案版.pdf"
+  },
+  "layout": {
+    "paper": "A3 landscape",
+    "width_mm": 420,
+    "height_mm": 297,
+    "pages_each": 2,
+    "columns": 2,
+    "class": "ctexart",
+    "engine": "XeLaTeX",
+    "fontset": "fandol",
+    "diagrams": "TikZ inline"
+  },
+  "completion": {
+    "all_questions_solved": true,
+    "both_current_sources_recovered": true,
+    "two_original_photos_recovered": true,
+    "all_current_tikz_drawings_in_sources": true,
+    "unanswered_question": null,
+    "next_page_or_problem": null
+  },
+  "verified_before_archive": {
+    "restored_sources_differ_only_by_answer_switch": true,
+    "latest_pdfs_two_pages_A3": true,
+    "standalone_and_old_zip_pdf_text_equal": true,
+    "standalone_and_old_zip_pdf_renders_equal_72dpi": true,
+    "project_build_entry_completed": true,
+    "passes_each": 2,
+    "rebuilt_pdf_text_and_renders_equal_144dpi": true,
+    "no_overfull": true,
+    "no_missing_characters": true
+  },
+  "relocated_archive_validation": {
+    "status": "passed",
+    "date": "2026-11-19",
+    "zip_crc_passed": true,
+    "manifest_all_entries_passed": true,
+    "source_template_consistency_passed": true,
+    "new_directory_contains_chinese_and_spaces": true,
+    "invoked_from_outside_project": true,
+    "format_generated_from_current_engine": true,
+    "both_documents_compiled_twice": true,
+    "all_four_pages_text_and_rgb_pixels_equal_at_144dpi": true,
+    "compile_input_logs_do_not_reference_old_workspace": true,
+    "report": "docs/迁移运行检查_20261119.json",
+    "note": "最终归档增加本检查记录和状态说明；编译源码、脚本、字体和资源与已迁移验证版本保持字节一致，并在最终解压时再次校验。"
+  },
+  "critical_answer_decision": {
+    "question": "二4",
+    "answer": "B",
+    "correct_statements": [
+      1,
+      2
+    ],
+    "wording": "原题大小一样按本卷已确认的面积相等含义处理；面积相等不足以保证全等及拼成平行四边形，原题措辞保留。"
+  },
+  "historical_reference": {
+    "file": "reference/四年级数学阶段测试_早期七页详解.pdf",
+    "pages": 7,
+    "paper": "A4",
+    "is_current_layout": false,
+    "generator_recovered": false,
+    "note": "早期ReportLab临时生成脚本未恢复；该PDF只作历史阅读参考，不参与当前build.py。当前所有题目的LaTeX题目和答案源码均已恢复。"
+  },
+  "known_limits": [
+    "Windows和macOS未实机验证；提供跨平台Python入口及Windows命令入口。",
+    "本包不携带操作系统相关XeTeX二进制和完整TeX发行版；需Python与TeX Live基础组件。",
+    "第二面左栏排版接近版芯高度上限，文字或字体改变后必须检查全部四页。",
+    "TEX源码含条件隐藏的答案；学生版是无答案PDF。",
+    "原卷口算12题标10星以及部分题意的解释已经记录，未擅自改分值或改原题。"
+  ],
+  "next_steps": [
+    "读取README、接续状态和内容校正。",
+    "python verify.py --require-pdf",
+    "python build.py --doctor",
+    "python build.py",
+    "python verify.py --require-pdf --pdf-dir build/pdf --compare-pdf-dir outputs",
+    "按照用户新指令修改统一模板并同步源码；复核四页后更新状态和打包。"
+  ],
+  "not_applicable": [
+    "本工程没有Lean形式化工程。",
+    "本工程没有PPT演示稿或其他研究项目。"
+  ]
+}

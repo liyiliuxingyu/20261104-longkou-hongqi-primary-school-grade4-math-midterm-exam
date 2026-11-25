@@ -1,0 +1,37 @@
+GitHub发布说明
+整理日期：2026-11-25（北京时间）
+
+用户指定中文名称：20261104龙口市红旗小学四年级数学期中考试试卷
+仓库：liyiliuxingyu/20261104-longkou-hongqi-primary-school-grade4-math-midterm-exam
+公开性：Public
+GitHub创建页面提示仓库路径仅接受ASCII字母、数字及 . - _，所以路径使用英文名称；完整中文名称保留在首页和简介。
+
+恢复来源：四年级数学阶段测试_续作工程包_20261119.zip
+原ZIP大小：35,783,531字节
+原ZIP SHA-256：30ee133e91a12ab8d57c25fcbba459626fbf701965f5fd4fd6f6a551cb486316
+原包文件数：237
+原包展开大小：50,544,632字节
+原清单条数：236（清单本身不自校验）
+
+本轮实际检查：
+1. ZIP SHA-256、ZIP CRC、文件路径安全检查通过。
+2. 原包236条清单中的大小和SHA-256逐项匹配。
+3. 原包verify.py --require-pdf：257项通过，0项失败，0项跳过。
+4. 独立只读复核确认核心目录齐全，未发现所扫描的凭据模式及编译临时文件。
+5. 本轮未重编译或修改LaTeX源码、题目、答案、TikZ、成品PDF、原始照片或vendor依赖。
+6. 2026-11-19的迁移重编译记录保留其历史检查日期，不写成本轮重编译结果。
+
+为GitHub发布增加：
+README.md：项目首页、成品入口、环境和接续说明。
+.gitignore：排除运行缓存，不排除已交付PDF及字体资源。
+.gitattributes：禁用自动换行转换，保持清单校验需要的原始字节。
+docs/GitHub发布说明.txt：本文件。
+package_project.py：根文件白名单加入README.md、.gitignore和.gitattributes。
+manifest_sha256.json：按发布后的完整工程刷新。
+
+保留的边界：
+现行两页A3 LaTeX工程完整；reference中的早期七页PDF仅为历史资料，旧ReportLab生成脚本未恢复。
+需要自行安装Python与TeX Live基础环境；Windows/macOS未实机验证。
+上游字体、宏包源码及许可证全部保留，未额外授权试题内容的版权用途。
+
+接续方法：下载GitHub ZIP或克隆整个仓库，先读README_先读我.txt、docs/接续状态.json及AGENTS.md，再运行校验。新对话可直接接收整个ZIP和新对话接续指令.txt。

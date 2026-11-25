@@ -1,0 +1,136 @@
+{
+  "versions": {
+    "xelatex": "XeTeX 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian)",
+    "latex_kernel": "2024-11-01 patch level 2",
+    "l3_programming_layer": "2025-01-18",
+    "ctex": "2.5.10 (2022-07-14)",
+    "xecjk": "3.9.1 (2022-08-05)",
+    "zhnumber": "3.0 (2022-07-14)",
+    "fandol": "0.3 (2015-07-18)",
+    "latin_modern": "2.005 (2021-03-21); complete OpenType family bundled"
+  },
+  "packages": [
+    {
+      "archive": "ctex.tar.xz",
+      "source_url": "https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/tlnet-final/archive/ctex.tar.xz",
+      "sha256": "579b4ef5088987886287175d321e6d2de41d380122dafcecc3117d01a7770d06",
+      "bytes": 130980
+    },
+    {
+      "archive": "ctex.doc.tar.xz",
+      "source_url": "https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/tlnet-final/archive/ctex.doc.tar.xz",
+      "sha256": "09760c1e86f1b414549e7c7f289291151e23dfa0d5ce8ba868f0aa5873c65862",
+      "bytes": 1143636
+    },
+    {
+      "archive": "ctex.source.tar.xz",
+      "source_url": "https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/tlnet-final/archive/ctex.source.tar.xz",
+      "sha256": "eccac9cf4367e4cc67e69652c3c8ed16abf3a47f779d9032e8a58961fa44a0c2",
+      "bytes": 89524
+    },
+    {
+      "archive": "xecjk.tar.xz",
+      "source_url": "https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/tlnet-final/archive/xecjk.tar.xz",
+      "sha256": "3975a09d07169e9c2c3e66b85990a76de6879e635bf428ddfee17118233a2bd4",
+      "bytes": 221848
+    },
+    {
+      "archive": "xecjk.doc.tar.xz",
+      "source_url": "https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/tlnet-final/archive/xecjk.doc.tar.xz",
+      "sha256": "deca9de43e2ad2abdb589f0c5cae21de8e93365824f21f264ca271b6b0222d03",
+      "bytes": 1622808
+    },
+    {
+      "archive": "xecjk.source.tar.xz",
+      "source_url": "https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/tlnet-final/archive/xecjk.source.tar.xz",
+      "sha256": "147ab1561c64eb095e34468a1d850e6b5d58d93d850f44b467a3745d4d082008",
+      "bytes": 90040
+    },
+    {
+      "archive": "zhnumber.tar.xz",
+      "source_url": "https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/tlnet-final/archive/zhnumber.tar.xz",
+      "sha256": "e50e0ce48bc0b663e9d0a73c4d7a83200d45278b2a072205228effa075c64b84",
+      "bytes": 8604
+    },
+    {
+      "archive": "zhnumber.doc.tar.xz",
+      "source_url": "https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/tlnet-final/archive/zhnumber.doc.tar.xz",
+      "sha256": "92a42081908bd533adb7a1c8ed6c750ad6ffcb81c3932970b0fac30e0c8cb89e",
+      "bytes": 293936
+    },
+    {
+      "archive": "zhnumber.source.tar.xz",
+      "source_url": "https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2023/tlnet-final/archive/zhnumber.source.tar.xz",
+      "sha256": "b3ee57dc9ef976f90c4a91c87070cd36fd8545f4afb1a30be40ab14267b3d95f",
+      "bytes": 14436
+    },
+    {
+      "archive": "fandol.zip",
+      "source_url": "https://mirrors.ctan.org/fonts/fandol.zip",
+      "sha256": "9278f01b417ded5766d98c3937192a1a6a2c73a5e94a3493fdfc932b2a55005a",
+      "bytes": 26688406
+    }
+  ],
+  "licenses": {
+    "ctex": "LPPL 1.3c or later; doc/latex/ctex/README.md and source/latex/ctex",
+    "xecjk": "LPPL 1.3c or later; doc/xelatex/xecjk/README.md and source/xelatex/xecjk",
+    "zhnumber": "LPPL 1.3c or later; doc/latex/zhnumber/README.md and source/latex/zhnumber",
+    "fandol": "GPL with font exception; doc/fonts/fandol/COPYING and README",
+    "latin_modern": "GUST Font License; doc/fonts/lm/GUST-FONT-LICENSE.TXT"
+  },
+  "validation": {
+    "smoke_compile": true,
+    "actual_exam_compile": true,
+    "passes_each": 2,
+    "questions_pages": 2,
+    "answers_pages": 2,
+    "paper_mm": [
+      420,
+      297
+    ],
+    "overfull": false,
+    "underfull": false,
+    "missing_characters": false,
+    "sources_unchanged": true,
+    "pdf_comparison": [
+      {
+        "kind": "试卷版",
+        "page": 1,
+        "pixels_equal": true,
+        "changed_channel_fraction": 0.0,
+        "mean_absolute_error_0_255": 0.0,
+        "text_equal": true
+      },
+      {
+        "kind": "试卷版",
+        "page": 2,
+        "pixels_equal": true,
+        "changed_channel_fraction": 0.0,
+        "mean_absolute_error_0_255": 0.0,
+        "text_equal": true
+      },
+      {
+        "kind": "答案版",
+        "page": 1,
+        "pixels_equal": true,
+        "changed_channel_fraction": 0.0,
+        "mean_absolute_error_0_255": 0.0,
+        "text_equal": true
+      },
+      {
+        "kind": "答案版",
+        "page": 2,
+        "pixels_equal": true,
+        "changed_channel_fraction": 0.0,
+        "mean_absolute_error_0_255": 0.0,
+        "text_equal": true
+      }
+    ]
+  },
+  "not_bundled": [
+    "XeTeX platform binary",
+    "LaTeX base / AMSMath / PGF-TikZ standard distribution packages",
+    "machine-specific xelatex.fmt cache",
+    "system package manager and authentication configuration"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "retrieved_date": "2026-11-19",
+  "timezone": "Asia/Shanghai",
+  "files": [
+    {
+      "filename": "四年级数学阶段测试_LaTeX试卷及答案.zip",
+      "library_file_id": "libfile_4d005f19c96c8191863379abada8d99b",
+      "file_id": "file_00000000f6c081f5a900e7573719c972",
+      "version": "2",
+      "size_bytes": 380250,
+      "modified_at": "2026-11-04T13:27:15.891140Z"
+    },
+    {
+      "filename": "四年级数学阶段测试_LaTeX试卷版.pdf",
+      "library_file_id": "libfile_b4706925373881919e9c09062e08aa6f",
+      "file_id": "file_0000000040b081f58e6708a28093ec70",
+      "version": "1",
+      "size_bytes": 203640,
+      "modified_at": "2026-11-04T13:27:16.253475Z"
+    },
+    {
+      "filename": "四年级数学阶段测试_LaTeX试卷版.tex",
+      "library_file_id": "libfile_a06b8b3b4ec4819197099cdba3528f07",
+      "file_id": "file_000000000a1c81f5b5ceb83a90ff313b",
+      "version": "2",
+      "size_bytes": 19838,
+      "modified_at": "2026-11-04T13:27:15.987752Z"
+    },
+    {
+      "filename": "四年级数学阶段测试_LaTeX答案版.tex",
+      "library_file_id": "libfile_1b742f2abdf48191a7454b702b547815",
+      "file_id": "file_00000000093c81f5a43b5f033f392ed1",
+      "version": "2",
+      "size_bytes": 19837,
+      "modified_at": "2026-11-04T13:27:16.415658Z"
+    },
+    {
+      "filename": "四年级数学阶段测试_LaTeX答案版.pdf",
+      "library_file_id": "libfile_1805dc839d108191ae29d76a4d797d62",
+      "file_id": "file_00000000e3e481f5922991d5c5635080",
+      "version": "2",
+      "size_bytes": 224008,
+      "modified_at": "2026-11-04T13:27:16.108752Z"
+    },
+    {
+      "filename": "四年级数学阶段测试_完整答案.pdf",
+      "library_file_id": "libfile_bcbf9d4733a88191a1839f3c3c3abaa5",
+      "file_id": "file_000000002b1881f5848912ed0b9654c4",
+      "version": "1",
+      "size_bytes": 157177,
+      "modified_at": "2026-11-04T07:29:27.626494Z"
+    },
+    {
+      "filename": "image-1793757861778.jpg",
+      "library_file_id": "libfile_c47569a8be988191a1548db7a9757a07",
+      "file_id": "file_00000000163c81fab5326190430b261d",
+      "version": null,
+      "size_bytes": 303165,
+      "modified_at": "2026-11-04T02:04:28.561343Z"
+    },
+    {
+      "filename": "image-1793757866957.jpg",
+      "library_file_id": "libfile_aa1f2c0edfe88191b063b1398bf954ce",
+      "file_id": "file_0000000048c081fa8cd3bbef1ce1129d",
+      "version": null,
+      "size_bytes": 259937,
+      "modified_at": "2026-11-04T02:04:31.152112Z"
+    }
+  ],
+  "notes": [
+    "仅记录本项目实际恢复文件的标识。所有编译都使用包内相对路径，不依赖这些标识或当前账户。",
+    "旧ZIP仅作恢复来源校对；包内不嵌套重复ZIP。"
+  ]
+}

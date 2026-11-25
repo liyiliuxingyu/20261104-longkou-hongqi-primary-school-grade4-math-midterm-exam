@@ -1,0 +1,39 @@
+{
+  "checks": [
+    {
+      "file": "四年级数学阶段测试_LaTeX试卷版.pdf",
+      "binary_identical": false,
+      "page_count_equal": true,
+      "pages": [
+        {
+          "page": 1,
+          "text_identical": true,
+          "render_72dpi_identical": true
+        },
+        {
+          "page": 2,
+          "text_identical": true,
+          "render_72dpi_identical": true
+        }
+      ]
+    },
+    {
+      "file": "四年级数学阶段测试_LaTeX答案版.pdf",
+      "binary_identical": false,
+      "page_count_equal": true,
+      "pages": [
+        {
+          "page": 1,
+          "text_identical": true,
+          "render_72dpi_identical": true
+        },
+        {
+          "page": 2,
+          "text_identical": true,
+          "render_72dpi_identical": true
+        }
+      ]
+    }
+  ],
+  "note": "独立PDF与旧ZIP内PDF字节不同；可见内容是否一致以逐页文本及渲染比较为准。工程采用持久文件的现行独立PDF。"
+}
