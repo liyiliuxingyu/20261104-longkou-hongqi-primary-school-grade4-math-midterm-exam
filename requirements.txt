@@ -1,0 +1,3 @@
+# Building PDFs uses only Python's standard library and an external TeX Live.
+# The verification and rendering comparison script uses PyMuPDF.
+PyMuPDF==1.26.6
